@@ -11,7 +11,7 @@ UCF Tower Defense is a game where UCF students battle to save their grades again
 [Velocity Chart](https://docs.google.com/spreadsheets/d/1EDwsVtqA2Tud6Zaj3U7Hk-IkvPk0VgM0-r-bcr_cTxo/edit#gid=0)
 
 # Members
-
+  Nicholas Nachowicz
 
 
 # Sprint 1 Task Allocation
