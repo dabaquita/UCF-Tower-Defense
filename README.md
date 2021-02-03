@@ -24,6 +24,8 @@ UCF Tower Defense is a game where UCF students battle to save their grades again
   Kirk Matthews
   
   Christopher Foreman
+  
+  Recleph Mere
 
 # Sprint 1 Task Allocation
 
