@@ -12,6 +12,8 @@ UCF Tower Defense is a game where UCF students battle to save their grades again
 
 # Members
   Nicholas Nachowicz
+  
+  Denielle Abaquita
 
 
 # Sprint 1 Task Allocation
