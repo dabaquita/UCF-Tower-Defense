@@ -6,6 +6,10 @@ UCF Tower Defense is a game where UCF students battle to save their grades again
 
 # Resources
 
+[Product Backlog](https://trello.com/b/epHd58wk/ucf-tower-defense)
+
+[Spring Backlog](https://trello.com/b/epHd58wk/ucf-tower-defense)
+
 [Burndown Chart](https://docs.google.com/spreadsheets/d/1fnH8CVBzcJMU6K55bMpOIfG0mbxfSTcWePDMlkh8kZU)
 
 [Velocity Chart](https://docs.google.com/spreadsheets/d/1EDwsVtqA2Tud6Zaj3U7Hk-IkvPk0VgM0-r-bcr_cTxo)
