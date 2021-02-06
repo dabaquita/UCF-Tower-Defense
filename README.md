@@ -35,7 +35,13 @@ b
 
 c
 
-d
+Kirk Matthews:
+
+- Add minimum of 3 User Stories to the product backlog
+- Adjusted sprint and product backlogs to reflect what was worked on during the week
+- Added requirements to the Trello Board
+- Work on Velocity Chart and Burndown Chart with group
+- Installed Unity and confirmed that project runs as expected on local environemnt
 
 Recleph Mere:
 - Add minimum of 3 User Stories to the product backlog
