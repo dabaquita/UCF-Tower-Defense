@@ -29,11 +29,13 @@ UCF Tower Defense is a game where UCF students battle to save their grades again
 
 # Sprint 1 Task Allocation
 
-a
+Nicholas Nachowicz:
 
-b
-
-c
+Denielle Abaquita:
+- Add minimum of 3 User Stories to the product backlog
+- Create Trello Board, Google Docs, and Google Sheets for resources
+- Install Unity and verify that it works on local environment
+- Connect Unity to GitHub repository
 
 Kirk Matthews:
 
@@ -42,6 +44,8 @@ Kirk Matthews:
 - Added requirements to the Trello Board
 - Work on Velocity Chart and Burndown Chart with group
 - Installed Unity and confirmed that project runs as expected on local environemnt
+
+Christopher Foreman:
 
 Recleph Mere:
 - Add minimum of 3 User Stories to the product backlog
