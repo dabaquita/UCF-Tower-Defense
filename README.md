@@ -8,13 +8,13 @@ UCF Tower Defense is a game where UCF students battle to save their grades again
 
 [Product Backlog](https://trello.com/b/epHd58wk/ucf-tower-defense)
 
-[Spring Backlog](https://trello.com/b/epHd58wk/ucf-tower-defense)
+[Sprint Backlog](https://trello.com/b/epHd58wk/ucf-tower-defense)
 
 [Burndown Chart](https://docs.google.com/spreadsheets/d/1fnH8CVBzcJMU6K55bMpOIfG0mbxfSTcWePDMlkh8kZU)
 
 [Velocity Chart](https://docs.google.com/spreadsheets/d/1EDwsVtqA2Tud6Zaj3U7Hk-IkvPk0VgM0-r-bcr_cTxo)
 
-[Requirements](https://docs.google.com/document/d/1DlF-B1wmmXm5em5aB-e6An-dy7mY2lrY1P4F30HdntY)
+[Requirements](https://trello.com/b/epHd58wk/ucf-tower-defense)
 
 # Members
   Nicholas Nachowicz
@@ -37,4 +37,10 @@ c
 
 d
 
-e
+Recleph Mere:
+- Add minimum of 3 User Stories to the product backlog
+- Organize the product backlog and sprint backlog based on priority
+- Add Requirements to Trello Board
+- Work on Velocity Chart and Burndown Chart with group
+- Install Unity & Connect Unity to github repository
+- Ensure Unity development enviornment is in working state
