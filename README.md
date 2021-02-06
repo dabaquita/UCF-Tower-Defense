@@ -30,6 +30,7 @@ UCF Tower Defense is a game where UCF students battle to save their grades again
 # Sprint 1 Task Allocation
 
 Nicholas Nachowicz:
+- Add minimum of 3 User Stories to the product backlog
 
 Denielle Abaquita:
 - Add minimum of 3 User Stories to the product backlog
