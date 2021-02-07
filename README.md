@@ -48,6 +48,8 @@ Kirk Matthews:
 - Installed Unity and confirmed that project runs as expected on local environemnt
 
 Christopher Foreman:
+- Add minimum of 3 User Stories to the product backlog
+- Install Unity and verify that it works on local environment
 
 Recleph Mere:
 - Add minimum of 3 User Stories to the product backlog
