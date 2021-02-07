@@ -31,6 +31,8 @@ UCF Tower Defense is a game where UCF students battle to save their grades again
 
 Nicholas Nachowicz:
 - Add minimum of 3 User Stories to the product backlog
+- Install Unity and verify that it works on local environment
+- Connect Unity to GitHub repository
 
 Denielle Abaquita:
 - Add minimum of 3 User Stories to the product backlog
@@ -39,7 +41,6 @@ Denielle Abaquita:
 - Connect Unity to GitHub repository
 
 Kirk Matthews:
-
 - Add minimum of 3 User Stories to the product backlog
 - Adjusted sprint and product backlogs to reflect what was worked on during the week
 - Added requirements to the Trello Board
@@ -47,6 +48,8 @@ Kirk Matthews:
 - Installed Unity and confirmed that project runs as expected on local environemnt
 
 Christopher Foreman:
+- Add minimum of 3 User Stories to the product backlog
+- Install Unity and verify that it works on local environment
 
 Recleph Mere:
 - Add minimum of 3 User Stories to the product backlog
