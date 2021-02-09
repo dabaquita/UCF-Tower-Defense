@@ -64,11 +64,20 @@ Recleph Mere:
 # Sprint 2 Task Allocation
 
 Nicholas Nachowicz:
+- Enemy sprites
+- System Architecture
 
 Denielle Abaquita:
+- Tower sprites
+- Map graphics
+- System Architecture
 
 Kirk Matthews:
+- System Architecture
 
 Christopher Foreman:
+- System Architecture
 
 Recleph Mere:
+- Main Menu and Settings UI
+- System Architecture
