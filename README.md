@@ -60,3 +60,15 @@ Recleph Mere:
 - Work on Velocity Chart and Burndown Chart with group
 - Install Unity & Connect Unity to github repository
 - Ensure Unity development enviornment is in working state
+
+# Sprint 2 Task Allocation
+
+Nicholas Nachowicz:
+
+Denielle Abaquita:
+
+Kirk Matthews:
+
+Christopher Foreman:
+
+Recleph Mere:
