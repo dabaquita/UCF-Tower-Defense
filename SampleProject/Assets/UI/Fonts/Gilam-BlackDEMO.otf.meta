@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: eebe1b5c7ff612f4bb4b6b9602c632f4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Gilam
+  fontNames:
+  - Gilam
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6ace2bbc3eb00bf4890451d4fff0e470, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

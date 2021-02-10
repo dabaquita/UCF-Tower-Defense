@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: START
+  m_Text: settings
 --- !u!222 &380742442
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -847,7 +847,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: START
+  m_Text: invite
 --- !u!222 &1319682519
 CanvasRenderer:
   m_ObjectHideFlags: 0
