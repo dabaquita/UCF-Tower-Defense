@@ -6,6 +6,28 @@ You should have your context, container, and component (c4model.com) diagrams in
 
 See Code Complete, Chapter 3 and https://c4model.com/
 
+System Context Diagram
+
+![System Context Diagram](images/System_Context.jpg)
+
+The System Context Diagram shows the relationship of the overall system and the user(s) that will interact with it. In our case, the system consits of just a client and database, so there are no external systems shown. Additionally, only one type of user will interact with the system. This user is shown above.
+
+Container Diagram
+
+![System Context Diagram](images/Component.jpg)
+
+The Container Diagram shows the way the game client and database interact. As is shown, the user never directly interacts with the database; rather, the user interacts with the game client, which interfaces with the database.
+
+Component Diagram
+
+![System Context Diagram](images/Container.jpg)
+
+The Component Diagram breaks down the individual components of the overall system. The client opens up on a main menu screen, which has three options. The play option leads to two game modes - survival and adventure - which each lead into the gameplay component. That component controls the map, the enemy waves, and other features.
+
+The settings option goes into a settings menu which allows you to control volume and difficulty.
+
+The login/account option moves into a different component that interfaces with the database, loading the appropriate player information.
+
 # Code Design
 
 You should have your UML Class diagram and any other useful UML diagrams in this section. Each diagram should be accompanied by a brief description explaining what the elements are and why they are in the diagram. For your class diagram, you must also include a table that relates each class to one or more user stories. 
