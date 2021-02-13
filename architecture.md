@@ -53,6 +53,7 @@ The UML Class Diagram breaks down the classes for the entirety of the game, espe
 
 ![ER Diagram](images/ER_Diagram.png)
 
+The user entity holds basic data for each user which shall only be viewable by the user who owns said data. The user map info holds user information about a given map, which was chosen for scalability as more maps are created. The map entity represents each playable map.
 # Business Rules
 
 This video game must uphold the rules and expectations of what is considered a tower defense video game. Tower defense is a strategy game whose goal is to defend the player's territory through placing defensive structures in order to stop enemies from reaching designated exits. This definition drives our video game design by requiring a top down map with entrances and exits for enemies as well as enabling the player to place towers on appropriate tiles on the map. 
@@ -133,14 +134,14 @@ We do not anticipate a need to overengineer since there are so few breakable par
 
 # Build-vs-Buy Decisions
 
-This section should list the third party libraries your system is using and describe what those libraries are being used for.
+Unity: We are using Unity game engine as the foundation for building our game. We’re taking advantage of its out of the box graphics editor, and  multi-platform portability to build our game.
 
-See Code Complete, Chapter 3
+Firebase: We are using Google’s Firebase Firestore database solution to store our users’ data externally. Its out of the box Authentication, Security Rules, and Unity SDKs allow users to create an account to login and out of.
 
 # Reuse
 
-See Code Complete, Chapter 3
+Although the game itself will not be using preexisting software or materials, the database security rules and cloud functions may need to be further defined for our user model use cases.
 
 # Change Strategy
 
-See Code Complete, Chapter 3
+Since we are still learning the features and rules of Firebase and Unity, as we develop the system software so far, each step of the design has been balanced to be specific enough in order to fullfill the requirements, but general enough to allow changes in areas that may need to be determined in the future.
