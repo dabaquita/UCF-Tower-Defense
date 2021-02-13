@@ -62,8 +62,6 @@ Additionally, the product must be UCF themed, so the players will be expecting U
 
 # User Interface Design
 
-You should have one or more user interface screens in this section. Each screen should be accompanied by an explaination of the screens purpose and how the user will interact with it. You should relate each screen to one another as the user transitions through the states of your application. You should also have a table that relates each window or component to the support using stories. 
-
 UCF Tower Defence UI Interface Diagram
 ![System Context Diagram](images/uifull.PNG)
 
@@ -84,6 +82,15 @@ In-game menu: The in-game menu is where the user will see maps, towers, and enem
 ![System Context Diagram](images/uidiagramingame.PNG)
 ![System Context Diagram](images/uidiagramingamemenu.PNG)
 ![System Context Diagram](images/uidiagrampause.PNG)
+
+| Block | User Story ID  |
+|---|---|
+| UCF Tower Defense Game |  |
+| Main Menu | U020 |
+| Login | U014, U010, U015 |
+| Settings Menu | U002, U001, U011 |
+| Level Select | U006, U011, U017 |
+| In-game | U018, U009, U027 |
 
 # Resource Management
 
