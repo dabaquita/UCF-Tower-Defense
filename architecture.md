@@ -32,13 +32,18 @@ The login/account option moves into a different component that interfaces with t
 
 ![UML Class Diagram](images/UML_Diagrams.png)
 
-You should have your UML Class diagram and any other useful UML diagrams in this section. Each diagram should be accompanied by a brief description explaining what the elements are and why they are in the diagram. For your class diagram, you must also include a table that relates each class to one or more user stories. 
+The UML Class Diagram breaks down the classes for the entirety of the game, especially gameplay. Development shall include the Player, Enemy, Tower, and Map classes to be available to use and modify.  
 
-See Code Complete, Chapter 3 and https://c4model.com/
+| Class | User Story ID  |
+|---|---|
+| Player | U028, U024, U003, U023, U018, U022, U004, U010, U012, U026  |
+| Enemy  | U028, U024, U005, U007, U008  |
+| Tower | U028, U003, U023, U018, U022, U009, U025  |
+| Map | U006, U012  |
 
 # Data Design
 
-![ER Diagram](images/ER Diagram.png)
+![ER Diagram](images/ER_Diagram.png)
 
 # Business Rules
 
