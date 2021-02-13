@@ -63,11 +63,14 @@ Additionally, the product must be UCF themed, so the players will be expecting U
 # User Interface Design
 
 You should have one or more user interface screens in this section. Each screen should be accompanied by an explaination of the screens purpose and how the user will interact with it. You should relate each screen to one another as the user transitions through the states of your application. You should also have a table that relates each window or component to the support using stories. 
+![System Context Diagram](images/uifull.PNG)
 ![System Context Diagram](images/uidiagrammainmenu.PNG)
 ![System Context Diagram](images/uidiagramsettings.PNG)
+![System Context Diagram](images/uidiagramacccr.PNG)
 ![System Context Diagram](images/uidiagramlevelselect.PNG)
-![System Context Diagram](images/uidiagramlogin.PNG)
+![System Context Diagram](images/uidiagramingame.PNG)
 ![System Context Diagram](images/uidiagramingamemenu.PNG)
+![System Context Diagram](images/uidiagrampause.PNG)
 See Code Complete, Chapter 3
 
 # Resource Management
