@@ -14,13 +14,13 @@ The System Context Diagram shows the relationship of the overall system and the 
 
 Container Diagram
 
-![System Context Diagram](images/Component.jpg)
+![System Context Diagram](images/Container.jpg)
 
 The Container Diagram shows the way the game client and database interact. As is shown, the user never directly interacts with the database; rather, the user interacts with the game client, which interfaces with the database.
 
 Component Diagram
 
-![System Context Diagram](images/Container.jpg)
+![System Context Diagram](images/Component.jpg)
 
 The Component Diagram breaks down the individual components of the overall system. The client opens up on a main menu screen, which has three options. The play option leads to two game modes - survival and adventure - which each lead into the gameplay component. That component controls the map, the enemy waves, and other features.
 
