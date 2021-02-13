@@ -63,47 +63,65 @@ See Code Complete, Chapter 3
 
 # Resource Management
 
-See Code Complete, Chapter 3
+As far as resource management is concerned, we do not believe that there is a source of potential issues. The game does not use an excessive amount of memory and the intended deployment environment is not expected to be memory-constrained or outside of the intended scope. Furthermore, as far as scare resources are concerned, there should only ever be a single database connection open at once, as more are not needed.
 
 # Security
 
-See Code Complete, Chapter 3
+For the purposes of this project, security is only a concern with the regards to the account login system. Accounts will authenticate with a password and username, and this information will be checked against what is stored in the database. No further security is of concern to this project since most other game functions do not need to be secured.
 
 # Performance
 
-See Code Complete, Chapter 3
+Regarding performance, the main goal is consistency. The game should perform in a consistent fashion; that is to say, it should be repeatable in exactly the same way. Specific speed vs. memory vs. cost issues are not a concern given the sort of environment that we expect to release on.
 
 # Scalability
 
-See Code Complete, Chapter 3
+Scalability is being built in be design. The levels themselves are modular, as is the tower creation process. Adding new levels or towers can be done simply in this way. The database is a small concern on this front, but it would take considerable development and play time for scaling to become a problem. Migrating to a larger database would not be difficult, but speed could become problematic in such a circumstance.
 
 # Interoperability
 
-See Code Complete, Chapter 3
+The system is not expected to share data or resources with other software or hardware. The game consists of a client and a simple database; nothing else.
 
 # Internationalization/Localization
 
-See Code Complete, Chapter 3
+The game’s menus, tutorial, and other items are going to be exclusively in English. Other locales are not supported by default and localization into other locales is not expected.
 
 # Input/Output
 
-See Code Complete, Chapter 3
+For I/O, the system will use a look-ahead reading scheme for loading player data and storing it for use in the session. Changes will be stored to the database on a look-behind scheme to limit connections to the database. Errors would be detected at the stream level.
 
 # Error Processing
 
-See Code Complete, Chapter 3
+Most error detecting will be detective rather than corrective. Players will be notified that an error has occurred, ideally with some information about why, and then it will quit in most cases. It will also be primarily active, checking actions as they occur for validity and then acting on them. Upon detecting an error, the system will enter an error-processing state to see if recovery is available. If it is, it will recover; else, it will fail, provide an error to the user, and exit.
+
+
+Error messages will be displayed with a simple message stating that an error has occurred as well as some sort of readout or traceback that identifies where the error occurred.
+
+
+Exceptions will be handled similarly to the error-checking state. They will not be logged or documented outside of in error readout. Errors or exceptions will be handled at the point of detection for speed and to prevent the creation of a catchall error-handling class. Each class will be responsible for handling its own errors.
+
+
+While some of the environment’s built-in exception- and error-handling will be used where appropriate, we do not expect this to apply to all cases, so some cases will require us to create our own error-handling and integrate it.
+
 
 # Fault Tolerance
 
-See Code Complete, Chapter 3
+There are very few faults expected in the system that would allow it to proceed unhindered. If a user gives a bad click or touch input, for example, it could reasonably be discarded and the user notified, but the program would continue to run. Similarly, if a link to the database cannot be established to load or store user information, the user could be notified, but choose to play anyways and not gain experience or other stored options.
+
+
+For the majority of operations that cause a fault, though, the behavior would not be defined by the system and, not knowing how to handle it without breaking, the system would notify the user and exit.
+
 
 # Architectural Feasibility
 
-See Code Complete, Chapter 3
+Systems similar to this one have been created before using the game engine and database options we’ve chosen. Furthermore, such systems exist with at a magnitude – or several magnitudes – above the scope of this system. As such, feasibility is not a concern.
 
 # Overengineering
 
-See Code Complete, Chapter 3
+The system is minimally overengineered because the system accepts minimal user input. Outside of account creation wherein a user can only enter text – which is validated by the database connection – the user does not enter text at all. Their actions are based purely on clicking or on clicking and dragging. Placement of towers is only allowed in certain areas and trying to place them elsewhere will simply fail, but not affect the program in any way.
+
+
+We do not anticipate a need to overengineer since there are so few breakable parts, and those that do exist are either minor enough to not cause a problem or so major that the system cannot recover.
+
 
 # Build-vs-Buy Decisions
 
