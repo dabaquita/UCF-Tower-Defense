@@ -36,7 +36,7 @@ See Code Complete, Chapter 3 and https://c4model.com/
 
 # Data Design
 
-![ER Diagram](ER Diagram.png)
+![ER Diagram](images/ER Diagram.png)
 
 # Business Rules
 
