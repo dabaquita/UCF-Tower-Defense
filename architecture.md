@@ -55,9 +55,9 @@ The UML Class Diagram breaks down the classes for the entirety of the game, espe
 
 # Business Rules
 
-You should list the assumptions, rules, and guidelines from external sources that are impacting your program design. 
+This video game must uphold the rules and expectations of what is considered a tower defense video game. Tower defense is a strategy game whose goal is to defend the player's territory through placing defensive structures in order to stop enemies from reaching designated exits. This definition drives our video game design by requiring a top down map with entrances and exits for enemies as well as enabling the player to place towers on appropriate tiles on the map. 
 
-See Code Complete, Chapter 3
+Additionally, the product must be UCF themed, so the players will be expecting UCF graphics throughout the game - from the menu to the gameplay itself. Thus, this video game will have custom UCF assets designed by the creators implemented in the game. 
 
 # User Interface Design
 
