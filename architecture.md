@@ -36,9 +36,7 @@ See Code Complete, Chapter 3 and https://c4model.com/
 
 # Data Design
 
-If you are using a database, you should have a basic Entity Relationship Diagram (ERD) in this section. This diagram should describe the tables in your database and their relationship to one another (especially primary/foreign keys), including the columns within each table. 
-
-See Code Complete, Chapter 3
+![ER Diagram](ER Diagram.png)
 
 # Business Rules
 
