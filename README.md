@@ -18,7 +18,7 @@ UCF Tower Defense is a game where UCF students battle to save their grades again
 
 [System Architecture](https://github.com/dabaquita/UCF-Tower-Defense/blob/main/architecture.md)
 
-[Product Demonstration](https://drive.google.com/file/d/1k3H3xrmh-wEB5MJJSSlZbZ4AoLLnRNqX/view?usp=sharing)
+[Product Demonstration for Sprint 2](https://drive.google.com/file/d/1k3H3xrmh-wEB5MJJSSlZbZ4AoLLnRNqX/view?usp=sharing)
 
 # Members
   Nicholas Nachowicz
