@@ -2,10 +2,6 @@ Populate each section with information as it applies to your project. If a secti
 
 # Program Organization
 
-You should have your context, container, and component (c4model.com) diagrams in this section, along with a description and explanation of each diagram and a table that relates each block to one or more user stories. 
-
-See Code Complete, Chapter 3 and https://c4model.com/
-
 System Context Diagram
 
 ![System Context Diagram](images/System_Context.jpg)
@@ -27,6 +23,18 @@ The Component Diagram breaks down the individual components of the overall syste
 The settings option goes into a settings menu which allows you to control volume and difficulty.
 
 The login/account option moves into a different component that interfaces with the database, loading the appropriate player information.
+
+| Block | User Story ID  |
+|---|---|
+| UCF Tower Defense Game |  |
+| Main Menu | U020 |
+| Login Controller | U014, U010, U015 |
+| Database | U004, U010, U017, U026 |
+| Game Level Selection |  |
+| Settings Menu | U002, U001, U011 |
+| Adventure Mode | U004, U013 |
+| Survival Mode | U004, U016 |
+| Level Controller | U021, U028, U024, U003, U023, U018, U005, U007, U022, U006, U009, U008, U012, U025, U027 |
 
 # Code Design
 
