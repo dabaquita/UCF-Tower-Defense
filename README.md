@@ -83,3 +83,26 @@ Christopher Foreman:
 Recleph Mere:
 - Main Menu and Settings UI
 - System Architecture
+
+# Sprint 3 Task Allocation
+
+Nicholas Nachowicz:
+- Enemy Sprites
+- Tower Sprites
+
+Denielle Abaquita:
+- U024, U021
+- Build skeleton for level design and gameplay
+- Map Graphics
+- Tower Sprites
+
+Kirk Matthews:
+
+
+Christopher Foreman:
+
+
+Recleph Mere:
+
+
+
