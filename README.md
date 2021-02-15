@@ -18,6 +18,8 @@ UCF Tower Defense is a game where UCF students battle to save their grades again
 
 [System Architecture](https://github.com/dabaquita/UCF-Tower-Defense/blob/main/architecture.md)
 
+[Product Demonstration for Sprint 2](https://drive.google.com/file/d/1k3H3xrmh-wEB5MJJSSlZbZ4AoLLnRNqX/view?usp=sharing)
+
 # Members
   Nicholas Nachowicz
   
@@ -79,5 +81,30 @@ Christopher Foreman:
 - System Architecture
 
 Recleph Mere:
-- Main Menu and Settings UI
-- System Architecture
+- Fixed a UI Bug causing different aspect ratios to display incorrect button placement
+- Added Background Music and SFX to Main Menu
+- Added Settings Menu and audio configurations
+- Added Keyboard & Joystick capability to the Main Menu
+
+# Sprint 3 Task Allocation
+
+Nicholas Nachowicz:
+- Enemy Sprites
+- Tower Sprites
+
+Denielle Abaquita:
+- U024, U021
+- Build skeleton for level design and gameplay
+- Map Graphics
+- Tower Sprites
+
+Kirk Matthews:
+
+
+Christopher Foreman:
+
+
+Recleph Mere:
+
+
+
