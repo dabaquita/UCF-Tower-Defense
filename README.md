@@ -81,8 +81,10 @@ Christopher Foreman:
 - System Architecture
 
 Recleph Mere:
-- Main Menu and Settings UI
-- System Architecture
+- Fixed a UI Bug causing different aspect ratios to display incorrect button placement
+- Added Background Music and SFX to Main Menu
+- Added Settings Menu and audio configurations
+- Added Keyboard & Joystick capability to the Main Menu
 
 # Sprint 3 Task Allocation
 
