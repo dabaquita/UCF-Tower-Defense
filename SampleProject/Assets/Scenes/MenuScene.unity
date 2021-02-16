@@ -1506,10 +1506,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c389b7e535393a64e9a37f415d46e536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1225938998}
-  animator: {fileID: 728913909}
-  animationFunction: {fileID: 0}
-  buttonIndex: 1
 --- !u!114 &728913911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1519,11 +1515,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 728913904}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85c7d9790152a544dafbf843ac97e2df, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1225938998}
-  disableOnce: 0
 --- !u!1 &735398803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,10 +2519,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7befbaf8ab6980b4c9d672a40f741be2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
-  keyPressed: 0
-  maxIndex: 2
-  audioSource: {fileID: 0}
 --- !u!82 &1225938999
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3100,10 +3090,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c389b7e535393a64e9a37f415d46e536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1225938998}
-  animator: {fileID: 1483739074}
-  animationFunction: {fileID: 1483739077}
-  buttonIndex: 0
 --- !u!114 &1483739077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3116,8 +3102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c7d9790152a544dafbf843ac97e2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1225938998}
-  disableOnce: 0
 --- !u!1 &1484894212
 GameObject:
   m_ObjectHideFlags: 0
@@ -3903,10 +3887,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c389b7e535393a64e9a37f415d46e536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1225938998}
-  animator: {fileID: 1759568449}
-  animationFunction: {fileID: 0}
-  buttonIndex: 2
 --- !u!114 &1759568451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3919,8 +3899,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c7d9790152a544dafbf843ac97e2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controller: {fileID: 1225938998}
-  disableOnce: 0
 --- !u!1 &1769384375
 GameObject:
   m_ObjectHideFlags: 0
