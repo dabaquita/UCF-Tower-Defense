@@ -31,11 +31,12 @@ public class MenuButton : MonoBehaviour
             {
                 
                 animator.SetBool ("Pressed", true);
+                button.onClick.Invoke();
                 
             }
             else if (animator.GetBool ("Pressed"))
             {
-                button.onClick.Invoke();
+                
                 animator.SetBool("Pressed", false);
                 animationFunction.disableOnce = true;
             }
