@@ -97,6 +97,7 @@ Denielle Abaquita:
 - Build skeleton for level design and gameplay
 - Map Graphics
 - Tower Sprites
+- Update the UML Diagrams
 
 Kirk Matthews:
 - U006, U024, U020
