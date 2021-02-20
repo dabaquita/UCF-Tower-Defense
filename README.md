@@ -99,7 +99,7 @@ Denielle Abaquita:
 - Tower Sprites
 
 Kirk Matthews:
-- U006, U024
+- U006, U024, U020
 
 Christopher Foreman:
 
