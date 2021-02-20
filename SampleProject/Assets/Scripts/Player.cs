@@ -14,4 +14,5 @@ public class Player : MonoBehaviour
         Health = startingHealth;
         Money = startingMoney;
     }
+
 }

@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     {
         if (Player.Health <= 0)
         {
-            Debug.Log("Lives is 0");
+            Debug.Log("Lives is 0. Game over.");
             SceneManager.LoadScene(sceneName:"MenuScene");
         }
 
