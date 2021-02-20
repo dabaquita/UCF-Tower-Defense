@@ -62,30 +62,29 @@ Additionally, the product must be UCF themed, so the players will be expecting U
 
 UCF Tower Defence UI Interface Diagram
 
-![System Context Diagram](images/uifull.PNG)
+![System Context Diagram](images/fullui.PNG)
 
 Main Menu: This Screen will be the main hub and startup of our game. The user will have buttons to interact with on this menu. The buttons will lead to the settings, level select, and login menus. The buttons will read settings, start, and log in. There will be no other functions on this menu. It will basically be a title screen.
 
-![System Context Diagram](images/uidiagrammainmenu.PNG)
+![System Context Diagram](images/mainmenuui.PNG)
 
 Settings: This menu will be the hub of changing simple options in the game. As of now the only basic settings to change are audio settings. The user will have sliders they can drag in order to change the volume of music, sound FX, and master volume. When the user is done they may exit using the main menu button.
 
-![System Context Diagram](images/uidiagramsettings.PNG)
+![System Context Diagram](images/settingsui.PNG)
 
 Login: In this menu, the user will be able to enter their user information in order to save their data. If the user doesn’t have an account there will be a create an account button taking them to the account creation menu. After logging in or creating an account the user will be brought back to the main menu.
 Account creation: In this menu, the user will be able to make a username and password in order to save their account information. The user will be brought back to the main menu.
 
-![System Context Diagram](images/uidiagramacccr.PNG)
+![System Context Diagram](images/loginui.PNG)
 
 Level select: In this menu, the user will be able to click on the level they wish to play however, levels with requirements (such as the previous level must be completed) may be locked. The user will also have the choice of difficulty with the options of easy, medium, and hard. When the user selects a level the game will start.
 
-![System Context Diagram](images/uidiagramlevelselect.PNG)
+![System Context Diagram](images/levelselectui.PNG)
 
 In-game menu: The in-game menu is where the user will see maps, towers, and enemies. The hud will display the user level, health, money, and game speed/pause. There will also be a tower select menu where a user can buy and upgrade towers as well as see descriptions and cost. This menu will be hidden until interacted with using a button that slides the menu onto the screen. The next three images will all pertain to the in-game menus.
 
-![System Context Diagram](images/uidiagramingame.PNG)
-![System Context Diagram](images/uidiagramingamemenu.PNG)
-![System Context Diagram](images/uidiagrampause.PNG)
+![System Context Diagram](images/ingameui.PNG)
+![System Context Diagram](images/fullingameui.PNG)
 
 | Block | User Story ID  |
 |---|---|
