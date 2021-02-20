@@ -105,6 +105,9 @@ Christopher Foreman:
 
 
 Recleph Mere:
+- U020, U003
+- Fix Audio and Animation bugs on menu and settings screen
+- Refactor animation script
 
 
 
