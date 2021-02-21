@@ -108,7 +108,7 @@ Kirk Matthews:
 - U006, U024, U020
 
 Christopher Foreman:
-
+- Created Automated Tests for game classes
 
 Recleph Mere:
 - U020, U003
