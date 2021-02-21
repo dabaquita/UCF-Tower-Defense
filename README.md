@@ -93,6 +93,9 @@ Recleph Mere:
 Nicholas Nachowicz:
 - Enemy Sprites
 - Tower Sprites
+- Gridmap for tower placement
+- Gridmap test
+- Updated the UI diagram
 
 Denielle Abaquita:
 - U024, U021
