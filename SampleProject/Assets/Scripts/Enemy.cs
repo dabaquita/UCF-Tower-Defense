@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public static int Health;
-    public int startingHealth = 50;
+    public int Health;
+    public static int startingHealth = 50;
 
     // for testing
-    Vector3 endOfMap;
+    public static Vector3 endOfMap = new Vector3(1,2,3);
 
     // Start is called before the first frame update
     void Start()
     {
-        Health = startingHealth;
-        transform.position = endOfMap;
+        Health = Enemy.startingHealth;
+        transform.position = Enemy.endOfMap;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isDead())
+        if (IsDead())
         {
-            destroyEnemy();
+            DestroyEnemy();
         }
 
         // will be true when the enemy hits the end of the map while still having health
@@ -30,17 +30,17 @@ public class Enemy : MonoBehaviour
         // one
         if (transform.position.Equals(endOfMap))
         {
-            damagePlayer();
+            DamagePlayer();
         }
     }
 
-    void damagePlayer()
+    public void DamagePlayer()
     {
         Player.Health -= 10;
-        destroyEnemy();
+        // DestroyEnemy();
     }
 
-    private bool isDead()
+    public bool IsDead()
     {
         if (Health <= 0)
         {
@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
         return false;
     }
 
-    private void destroyEnemy()
+    public void DestroyEnemy()
     {
         Destroy(gameObject);
     }
