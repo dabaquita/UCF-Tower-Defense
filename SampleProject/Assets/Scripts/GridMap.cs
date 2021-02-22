@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-// using TMPro;
+//using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
  
-public class Grid
+public class GridMap
 {
     private int width;
     private int height;
@@ -14,7 +14,7 @@ public class Grid
     private int[,] gridArray;
     private TextMesh[,] debugTextArray;
  
-    public Grid (int width, int height, float cellSize, Vector3 originPosition) {
+    public GridMap (int width, int height, float cellSize, Vector3 originPosition) {
         this.width = width;
         this.height = height;
         this.cellSize = cellSize;
