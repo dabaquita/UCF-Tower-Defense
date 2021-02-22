@@ -38,7 +38,7 @@ The login/account option moves into a different component that interfaces with t
 
 ![UML Class Diagram](images/UML_Diagrams.png)
 
-The UML Class Diagram breaks down the classes for the entirety of the game, especially gameplay. Development shall include the Player, Enemy, Tower, and Map classes to be available to use and modify.  
+The UML Class Diagram breaks down the classes for the entirety of the game, especially gameplay. Gameplay shall include the Player, Enemy, Tower, and Map classes to be available to use and modify. The entire Unity game project shall also include a GameManager that manages the state of the game at all times. This consists of modifying the Player class during gameplay and maintaining lists for available Enemies and Towers on a specific Map. Each Map shall also include a Path class obtained from the built-in Unity Asset Store and a custom Grid class to enable Tower placement. 
 
 | Class | User Story ID  |
 |---|---|
@@ -46,6 +46,8 @@ The UML Class Diagram breaks down the classes for the entirety of the game, espe
 | Enemy  | U028, U024, U005, U007, U008  |
 | Tower | U028, U003, U023, U018, U022, U009, U025  |
 | Map | U006, U012  |
+| Grid | U006, U012  |
+| GameManager | U023  |
 
 # Data Design
 

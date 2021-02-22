@@ -20,6 +20,8 @@ UCF Tower Defense is a game where UCF students battle to save their grades again
 
 [Product Demonstration for Sprint 2](https://drive.google.com/file/d/1k3H3xrmh-wEB5MJJSSlZbZ4AoLLnRNqX/view?usp=sharing)
 
+[Product Demonstration for Sprint 3](https://drive.google.com/file/d/1cgwSWUqgP1UmW7IesoQGV5Kgx_plpGkD/view)
+
 # Members
   Nicholas Nachowicz
   
@@ -91,20 +93,27 @@ Recleph Mere:
 Nicholas Nachowicz:
 - Enemy Sprites
 - Tower Sprites
+- Gridmap for tower placement
+- Gridmap test
+- Updated the UI diagram
 
 Denielle Abaquita:
 - U024, U021
 - Build skeleton for level design and gameplay
 - Map Graphics
 - Tower Sprites
+- Update the UML Diagrams
 
 Kirk Matthews:
 - U006, U024, U020
 
 Christopher Foreman:
-
+- Created Automated Tests for game classes
 
 Recleph Mere:
+- U020, U003
+- Fix Audio and Animation bugs on menu and settings screen
+- Refactor animation script
 
 
 
