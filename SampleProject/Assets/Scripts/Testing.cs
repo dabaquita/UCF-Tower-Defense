@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Testing : MonoBehaviour
 {
-    Grid grid;
+    GridMap grid;
     int value;
     private void Start() {
-        grid = new Grid(82, 42, 1f, new Vector3(-41,-21));
+        grid = new GridMap(82, 42, 1f, new Vector3(-41,-21));
     }
  
     private void Update() {
