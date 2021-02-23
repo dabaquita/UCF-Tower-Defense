@@ -1,11 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// using PathCreation;
 
 public class Enemy : MonoBehaviour
 {
     public int Health;
     public static int startingHealth = 50;
+
+    // public pathCreator pathCreator;
+    // public float speed = 5;
+    // float distanceTravelled;
+
 
     // for testing
     public static Vector3 endOfMap = new Vector3(1,2,3);
@@ -20,6 +26,11 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // distanceTravelled += speed * Time.deltaTime;
+        // transform.position = pathCreator.path.getPointAtDistance(distanceTravelled);
+
+
         if (IsDead())
         {
             DestroyEnemy();
