@@ -115,5 +115,19 @@ Recleph Mere:
 - Fix Audio and Animation bugs on menu and settings screen
 - Refactor animation script
 
+# Sprint 4 Task Allocation
+
+Nicholas Nachowicz:
+
+Denielle Abaquita:
+- Tower Sprites
+- Map graphics
+- Enemy AI and health
+
+Kirk Matthews:
 
 
+Christopher Foreman:
+
+
+Recleph Mere:
