@@ -126,6 +126,9 @@ Denielle Abaquita:
 
 Kirk Matthews:
 
+- Tower buy menu
+- In-game UI shell
+- Enemy handling
 
 Christopher Foreman:
 
