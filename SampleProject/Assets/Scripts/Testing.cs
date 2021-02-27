@@ -12,7 +12,7 @@ public class Testing : MonoBehaviour
  
     private void Update() {
         if (Input.GetMouseButtonDown(0)) {
-            grid.SetValue(Camera.main.ScreenToWorldPoint(Input.mousePosition), 10);
+            grid.SetValue(Camera.main.ScreenToWorldPoint(Input.mousePosition), 1);
         }
  
         if (Input.GetMouseButtonDown(1)) {
