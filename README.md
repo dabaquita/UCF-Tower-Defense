@@ -137,11 +137,7 @@ Kirk Matthews:
 - Enemy handling
 
 Christopher Foreman:
-<<<<<<< HEAD
-- Enemy sprite path creation
-=======
 - Sprite path creation
 - Enemy sprite path follower
->>>>>>> b1aad54cbab08d4de86b29752b51b8d556ba3452
 
 Recleph Mere:
