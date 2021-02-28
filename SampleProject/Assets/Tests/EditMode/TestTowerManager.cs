@@ -17,15 +17,15 @@ namespace Tests
         TowerManager towerManager;
         Vector2 mousePoint;
         GameObject newTower;
-            
+
         [SetUp]
-        public void SetUp() 
+        public void SetUp()
         {
             towerButton = gameTowerObject.GetComponent<TowerBtn>();
             towerManager = gameManagerObject.GetComponent<TowerManager>();
             towerManager.SetTowerSprite(towerButton);
         }
-        
+
         [Test]
         public void SelectCorrectTower()
         {
@@ -42,10 +42,10 @@ namespace Tests
             mousePoint = GameObject.Find("GreenGrass (6)").transform.position;
             RaycastHit2D hit = Physics2D.Raycast(mousePoint, Vector2.zero);
             towerManager.PlaceTower(hit);
-       
+
             newTower = towerManager.GetTowerPosition();
             Assert.AreEqual(hit.transform.position, newTower.transform.position);
-            
+
         }
 
         [Test]
@@ -53,17 +53,17 @@ namespace Tests
         {
             towerManager.SelectTower(towerButton);
 
-            mousePoint = new Vector2((float) 0.6148433, (float) -34.10126);
+            mousePoint = new Vector2((float)0.6148433, (float)-34.10126);
 
             RaycastHit2D hit = Physics2D.Raycast(mousePoint, Vector2.zero);
             towerManager.PlaceTower(hit);
             GameObject newTower = towerManager.GetTowerPosition();
 
-            if(hit.collider == null)
+            if (hit.collider == null)
             {
                 Assert.IsNull(hit.collider);
             }
-            else 
+            else
             {
                 Assert.AreNotEqual(hit.transform.position, newTower.transform.position);
             }
