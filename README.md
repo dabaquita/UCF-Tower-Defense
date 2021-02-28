@@ -124,6 +124,9 @@ Recleph Mere:
 # Sprint 4 Task Allocation
 
 Nicholas Nachowicz:
+- Enemy Sprites
+- Tower Buy menu
+- Tower Placement Visuals
 
 Denielle Abaquita:
 - Tower Sprites
@@ -131,7 +134,6 @@ Denielle Abaquita:
 - Enemy AI and health
 
 Kirk Matthews:
-
 - Tower buy menu
 - In-game UI shell
 - Enemy handling
