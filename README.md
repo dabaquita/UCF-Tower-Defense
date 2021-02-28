@@ -134,3 +134,5 @@ Christopher Foreman:
 
 
 Recleph Mere:
+- Tower Placement Logic
+- Game Audio Control
