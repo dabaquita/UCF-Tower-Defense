@@ -13,13 +13,6 @@ namespace Tests
         GameObject enemy;
         Enemy en;
 
-        //[SetUp]
-        public void SetUp()
-        {
-            GameObject enemy = GameObject.Find("hollander");
-            en = enemy.GetComponent<Enemy>();
-        }
-
         [Test]
         public void TestEnemyDamagesPlayer()
         {
