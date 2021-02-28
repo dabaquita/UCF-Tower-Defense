@@ -6,23 +6,41 @@ using UnityEngine.TestTools;
 
 namespace Tests
 {
-    public class TestPlayer1
+    public class TestPlayer
     {
-        // A Test behaves as an ordinary method
-        [Test]
-        public void TestPlayer1SimplePasses()
+        Player player;
+
+        [SetUp]
+        public void SetUp()
         {
-            // Use the Assert class to test conditions
+            player = new Player();
         }
 
-        // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-        // `yield return null;` to skip a frame.
-        [UnityTest]
-        public IEnumerator TestPlayer1WithEnumeratorPasses()
+        [Test]
+        public void TestChangeHealth()
         {
-            // Use the Assert class to test conditions.
-            // Use yield to skip a frame.
-            yield return null;
+            float previousHealth = player.getHealth();
+
+            player.setHealth(10);
+            Assert.AreNotEqual(previousHealth, player.getHealth());
+        }
+
+        [Test]
+        public void TestChangeLevel()
+        {
+            float previousLevel = player.getLevel();
+
+            player.setLevel(10);
+            Assert.AreNotEqual(previousLevel, player.getLevel());
+        }
+
+        [Test]
+        public void TestChangeMoney()
+        {
+            float previousMoney = player.getMoney();
+
+            player.setMoney(10);
+            Assert.AreNotEqual(previousMoney, player.getMoney());
         }
     }
 }
