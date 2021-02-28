@@ -8,21 +8,30 @@ namespace Tests
 {
     public class TestGameManager
     {
-        // A Test behaves as an ordinary method
-        [Test]
-        public void TestGameManagerSimplePasses()
+        GameManager gameManager;
+
+        [SetUp]
+        public void SetUp()
         {
-            // Use the Assert class to test conditions
+            gameManager = new GameManager();
         }
 
-        // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-        // `yield return null;` to skip a frame.
-        [UnityTest]
-        public IEnumerator TestGameManagerWithEnumeratorPasses()
+        [Test]
+        public void TestSetMap()
         {
-            // Use the Assert class to test conditions.
-            // Use yield to skip a frame.
-            yield return null;
+            string memoryMall = "Memory_Mall";
+
+            gameManager.setMap(memoryMall);
+            Assert.AreEqual(memoryMall, gameManager.getMap());
+        }
+
+        [Test]
+        public void TestResetGame()
+        {
+            gameManager.resetGame();
+
+      
+            Assert.IsNull(gameManager.getMap());
         }
     }
 }
