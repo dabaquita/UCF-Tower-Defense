@@ -5,8 +5,8 @@ using PathCreation;
 
 public class Enemy : MonoBehaviour
 {
-    public int Health;
-    public static int startingHealth = 50;
+    private int health;
+    private const int START_HEALTH = 50;
 
     public PathCreator pathCreator;
     public float speed = 5;
@@ -16,14 +16,13 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Health = Enemy.startingHealth;
+        health = START_HEALTH;
         transform.position = pathCreator.path.GetPointAtTime(0.0f);
     }
 
     // Update is called once per frame
     void Update()
     {
-
         distanceTravelled += speed * Time.deltaTime;
         transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled, EndOfPathInstruction.Stop);
 
@@ -45,13 +44,13 @@ public class Enemy : MonoBehaviour
 
     public void DamagePlayer()
     {
-        Player.Health -= 10;
+        Player.setHealth(Player.getHealth() - 10);
         DestroyEnemy();
     }
 
     public bool IsDead()
     {
-        if (Health <= 0)
+        if (health <= 0)
         {
             return true;
         }
@@ -74,12 +73,11 @@ public class Enemy : MonoBehaviour
 
     public int GetEnemyHealth()
     {
-        return Health;
+        return health;
     }
 
-    public int SetEnemyHealth(int newHealth)
+    public void SetEnemyHealth(int newHealth)
     {
-        Health = newHealth;
-        return newHealth;
+        health = newHealth;
     }
 }
