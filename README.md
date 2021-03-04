@@ -147,3 +147,18 @@ Christopher Foreman:
 Recleph Mere:
 - Tower Placement Logic
 - Game Audio Control
+
+# Sprint 5 Task Allocation
+
+Nicholas Nachowicz:
+
+Denielle Abaquita:
+
+Kirk Matthews:
+- Audio Control
+- Major Class Refactoring
+- Health and Money UI
+
+Christopher Foreman:
+
+Recleph Mere:
