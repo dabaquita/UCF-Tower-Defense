@@ -5,59 +5,59 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public static int Health;
-    public int startingHealth = 100;
+    private static int health;
+    private const int START_HEALTH = 100;
 
-    public static int Money;
-    public int startingMoney = 300;
+    private static int money;
+    private const int START_MONEY = 300;
 
     private static int level;
-    private int startingLevel = 0;
+    private const int START_LEVEL = 0;
 
     public Text healthText;
 
     // Start is called before the first frame update
     void Start()
     {
-        Health = startingHealth;
-        Money = startingMoney;
-        level = startingLevel;
-        healthText.text = Health.ToString();
+        health = START_HEALTH;
+        money = START_MONEY;
+        level = START_LEVEL;
+        healthText.text = health.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-        healthText.text = Health.ToString();
+        healthText.text = health.ToString();
     }
 
-    public int getHealth()
+    public static int getHealth()
     {
-        return Health;
+        return health;
     }
 
-    public int getLevel()
+    public static int getLevel()
     {
         return level;
     }
 
-    public int getMoney()
+    public static int getMoney()
     {
-        return Money;
+        return money;
     }
 
-    public void setHealth(int newHealth)
+    public static void setHealth(int newHealth)
     {
-        Health = newHealth;
+        health = newHealth;
     }
 
-    public void setLevel(int newHealth)
+    public static void setLevel(int newHealth)
     {
         level = newHealth;
     }
 
-    public void setMoney(int newMoney)
+    public static void setMoney(int newMoney)
     {
-        Money = newMoney;
+        money = newMoney;
     }
 }
