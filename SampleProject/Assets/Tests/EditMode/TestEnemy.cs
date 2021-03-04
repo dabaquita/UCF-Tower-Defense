@@ -18,11 +18,11 @@ namespace Tests
         {
             GameObject enemy = GameObject.Find("hollander");
             en = enemy.GetComponent<Enemy>();
-            Player.Health = 100;
+            Player.setHealth(100);
 
             en.DamagePlayer();
 
-            Assert.AreEqual(Player.Health, 90);
+            Assert.AreEqual(Player.getHealth(), 90);
         }
 
         [Test]

@@ -19,28 +19,28 @@ namespace Tests
         [Test]
         public void TestChangeHealth()
         {
-            float previousHealth = player.getHealth();
+            float previousHealth = Player.getHealth();
 
-            player.setHealth(10);
-            Assert.AreNotEqual(previousHealth, player.getHealth());
+            Player.setHealth(10);
+            Assert.AreNotEqual(previousHealth, Player.getHealth());
         }
 
         [Test]
         public void TestChangeLevel()
         {
-            float previousLevel = player.getLevel();
+            float previousLevel = Player.getLevel();
 
-            player.setLevel(10);
-            Assert.AreNotEqual(previousLevel, player.getLevel());
+            Player.setLevel(10);
+            Assert.AreNotEqual(previousLevel, Player.getLevel());
         }
 
         [Test]
         public void TestChangeMoney()
         {
-            float previousMoney = player.getMoney();
+            float previousMoney = Player.getMoney();
 
-            player.setMoney(10);
-            Assert.AreNotEqual(previousMoney, player.getMoney());
+            Player.setMoney(10);
+            Assert.AreNotEqual(previousMoney, Player.getMoney());
         }
     }
 }
