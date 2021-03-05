@@ -4923,7 +4923,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 260686409}
   m_HandleRect: {fileID: 260686408}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -8576,7 +8576,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da8a91aca3f830c4a9cb013f0163e5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 50
   pathCreator: {fileID: 1142587727}
   speed: 20
   endOfPathInstruction: 0
@@ -11143,9 +11142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7737e730a479e540b1c6cbca9daadbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
-  startingMoney: 300
   healthText: {fileID: 295455545}
+  moneyText: {fileID: 1228744687}
 --- !u!1 &1465498028
 GameObject:
   m_ObjectHideFlags: 0
