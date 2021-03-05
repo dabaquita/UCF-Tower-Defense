@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 56965295}
   - component: {fileID: 56965294}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 86928456}
   - component: {fileID: 86928455}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -899,7 +899,7 @@ GameObject:
   - component: {fileID: 134389060}
   - component: {fileID: 134389059}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -999,11 +999,11 @@ RectTransform:
   - {fileID: 1326912143}
   - {fileID: 2072232603}
   m_Father: {fileID: 281413299}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 181.7, y: -1258.3}
+  m_AnchoredPosition: {x: 181.7, y: -693.35}
   m_SizeDelta: {x: 352.6001, y: 188.34607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &136746587
@@ -1077,11 +1077,11 @@ RectTransform:
   - {fileID: 2086878024}
   - {fileID: 459159021}
   m_Father: {fileID: 281413299}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 181.7, y: -693.35}
+  m_AnchoredPosition: {x: 181.7, y: -128.3}
   m_SizeDelta: {x: 352.6001, y: 188.34607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140444709
@@ -1133,7 +1133,7 @@ GameObject:
   - component: {fileID: 143370908}
   - component: {fileID: 143370907}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1833,7 +1833,7 @@ GameObject:
   - component: {fileID: 206345147}
   - component: {fileID: 206345146}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2514,11 +2514,11 @@ RectTransform:
   - {fileID: 926603977}
   - {fileID: 143370906}
   m_Father: {fileID: 281413299}
-  m_RootOrder: 3
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 181.7, y: -505}
+  m_AnchoredPosition: {x: 181.7, y: -1446.6}
   m_SizeDelta: {x: 352.6001, y: 188.34607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &262892262
@@ -2696,14 +2696,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 299227933}
-  - {fileID: 537713826}
-  - {fileID: 1435234243}
-  - {fileID: 262892261}
   - {fileID: 140444708}
   - {fileID: 1975652286}
   - {fileID: 819433874}
   - {fileID: 136746586}
   - {fileID: 1890438641}
+  - {fileID: 1435234243}
+  - {fileID: 537713826}
+  - {fileID: 262892261}
   m_Father: {fileID: 1602408481}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3062,7 +3062,7 @@ GameObject:
   - component: {fileID: 343285969}
   - component: {fileID: 343285968}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3789,7 +3789,7 @@ GameObject:
   - component: {fileID: 459159023}
   - component: {fileID: 459159022}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3868,7 +3868,7 @@ GameObject:
   - component: {fileID: 474904975}
   - component: {fileID: 474904974}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4690,11 +4690,11 @@ RectTransform:
   - {fileID: 1998688893}
   - {fileID: 343285967}
   m_Father: {fileID: 281413299}
-  m_RootOrder: 1
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 181.7, y: -128.3}
+  m_AnchoredPosition: {x: 181.7, y: -1258.3}
   m_SizeDelta: {x: 352.6001, y: 188.34607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &537713827
@@ -5059,7 +5059,7 @@ GameObject:
   - component: {fileID: 588211543}
   - component: {fileID: 588211542}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5437,7 +5437,7 @@ GameObject:
   - component: {fileID: 621900508}
   - component: {fileID: 621900507}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5494,7 +5494,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cost: 25000 USD'
+  m_Text: 'Cost: 25000 KC'
 --- !u!222 &621900508
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5785,7 +5785,7 @@ GameObject:
   - component: {fileID: 714787999}
   - component: {fileID: 714787998}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5842,7 +5842,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cost: 1500 JPY'
+  m_Text: 'Cost: 1500 KC'
 --- !u!222 &714787999
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6722,11 +6722,11 @@ RectTransform:
   - {fileID: 621900506}
   - {fileID: 1476649276}
   m_Father: {fileID: 281413299}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 181.7, y: -1070}
+  m_AnchoredPosition: {x: 181.7, y: -505}
   m_SizeDelta: {x: 352.6001, y: 188.34607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &819433875
@@ -7772,7 +7772,7 @@ GameObject:
   - component: {fileID: 882989952}
   - component: {fileID: 882989951}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7937,7 +7937,7 @@ GameObject:
   - component: {fileID: 926603979}
   - component: {fileID: 926603978}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7994,7 +7994,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cost: 2500 AUD'
+  m_Text: 'Cost: 2500 KC'
 --- !u!222 &926603979
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10440,7 +10440,7 @@ GameObject:
   - component: {fileID: 1326912145}
   - component: {fileID: 1326912144}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10497,7 +10497,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cost: 6.99 USD + S & H'
+  m_Text: 'Cost: 6.99 KC'
 --- !u!222 &1326912145
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10518,7 +10518,7 @@ GameObject:
   - component: {fileID: 1348316034}
   - component: {fileID: 1348316033}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10942,11 +10942,11 @@ RectTransform:
   - {fileID: 714787997}
   - {fileID: 86928454}
   m_Father: {fileID: 281413299}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 181.7, y: -316.65}
+  m_AnchoredPosition: {x: 181.7, y: -1070}
   m_SizeDelta: {x: 352.6001, y: 188.34607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1435234244
@@ -11264,7 +11264,7 @@ GameObject:
   - component: {fileID: 1476649278}
   - component: {fileID: 1476649277}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12774,7 +12774,7 @@ GameObject:
   - component: {fileID: 1641513199}
   - component: {fileID: 1641513198}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12884,7 +12884,7 @@ GameObject:
   - component: {fileID: 1679046545}
   - component: {fileID: 1679046544}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13990,7 +13990,7 @@ GameObject:
   - component: {fileID: 1844200550}
   - component: {fileID: 1844200549}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14047,7 +14047,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cost: Priceless'
+  m_Text: 'Cost: 100 KC'
 --- !u!222 &1844200550
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14198,11 +14198,11 @@ RectTransform:
   - {fileID: 1844200548}
   - {fileID: 474904973}
   m_Father: {fileID: 281413299}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 181.7, y: -1446.6}
+  m_AnchoredPosition: {x: 181.7, y: -881.7}
   m_SizeDelta: {x: 352.6001, y: 188.34607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1890438642
@@ -14756,11 +14756,11 @@ RectTransform:
   - {fileID: 2062401743}
   - {fileID: 588211541}
   m_Father: {fileID: 281413299}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 181.7, y: -881.7}
+  m_AnchoredPosition: {x: 181.7, y: -316.65}
   m_SizeDelta: {x: 352.6001, y: 188.34607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1975652287
@@ -14812,7 +14812,7 @@ GameObject:
   - component: {fileID: 1998688895}
   - component: {fileID: 1998688894}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14869,7 +14869,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cost: 1000 CAD'
+  m_Text: 'Cost: 1000 KC'
 --- !u!222 &1998688895
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14890,7 +14890,7 @@ GameObject:
   - component: {fileID: 2008295937}
   - component: {fileID: 2008295936}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15582,7 +15582,7 @@ GameObject:
   - component: {fileID: 2062401745}
   - component: {fileID: 2062401744}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15639,7 +15639,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cost: 18000 DOP'
+  m_Text: 'Cost: 18000 KC'
 --- !u!222 &2062401745
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15660,7 +15660,7 @@ GameObject:
   - component: {fileID: 2072232605}
   - component: {fileID: 2072232604}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15738,7 +15738,7 @@ GameObject:
   - component: {fileID: 2086878026}
   - component: {fileID: 2086878025}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15795,7 +15795,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cost: 4000 BRL'
+  m_Text: 'Cost: 4000 KC'
 --- !u!222 &2086878026
 CanvasRenderer:
   m_ObjectHideFlags: 0
