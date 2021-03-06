@@ -151,6 +151,7 @@ Nicholas Nachowicz:
 Denielle Abaquita:
 
 Kirk Matthews:
+- U001, U029
 - Audio Control
 - Major Class Refactoring
 - Health and Money UI
