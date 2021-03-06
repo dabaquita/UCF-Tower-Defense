@@ -6,6 +6,13 @@ public class GameManager : MonoBehaviour
 {
     private string currentMap;
 
+    void Start()
+    {
+        // possible solution for getting active scene depending on implementation of GameManager
+        //currentMap = SceneManager.GetActiveScene().name;
+        //Debug.Log(currentMap);
+    }
+
     // Update is called once per frame
     void Update()
     {
