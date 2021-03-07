@@ -1,6 +1,0 @@
-# Manual Test One - Testing the Enemy class's IsAtEnd() method.
-1. Open the game.
-2. Click on the "Play" button.
-3. Click on the "Adventure" button.
-4. Click on the "Memory Mall" button.
-5. Dr. H's head should move around the course. Once it reaches the end of the map, you should be moved back to the main menu.
