@@ -149,9 +149,12 @@ Recleph Mere:
 Nicholas Nachowicz:
 
 Denielle Abaquita:
+- U021, U029, U30
+- Map tilesets
+- Major Class Refactoring
 
 Kirk Matthews:
-- U001, U029
+- U001, U029, U30
 - Audio Control
 - Major Class Refactoring
 - Health and Money UI
