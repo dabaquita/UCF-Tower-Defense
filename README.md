@@ -132,6 +132,7 @@ Denielle Abaquita:
 - Enemy AI and health
 
 Kirk Matthews:
+- U018, U028
 - Tower buy menu
 - In-game UI shell
 - Enemy handling
