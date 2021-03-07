@@ -72,6 +72,7 @@ Recleph Mere:
 # Sprint 2 Task Allocation
 
 Nicholas Nachowicz:
+- U021
 - Enemy sprites
 - System Architecture
 
@@ -95,6 +96,7 @@ Recleph Mere:
 # Sprint 3 Task Allocation
 
 Nicholas Nachowicz:
+- U021, U023
 - Enemy Sprites
 - Tower Sprites
 - Gridmap for tower placement
@@ -122,6 +124,7 @@ Recleph Mere:
 # Sprint 4 Task Allocation
 
 Nicholas Nachowicz:
+- U003, U005, U018, U021, U023
 - Enemy Sprites
 - Tower Buy menu
 - Tower Placement Visuals
@@ -148,6 +151,9 @@ Recleph Mere:
 # Sprint 5 Task Allocation
 
 Nicholas Nachowicz:
+- U021, U022
+- Map tilesets
+- Tower selection menu and placement
 
 Denielle Abaquita:
 - U021, U029, U030
