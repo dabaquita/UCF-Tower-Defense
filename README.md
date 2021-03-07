@@ -162,3 +162,5 @@ Kirk Matthews:
 Christopher Foreman:
 
 Recleph Mere:
+- Enable All Towers to be Placed on Map
+- Work on Making Towers Attack Enemy Sprites
