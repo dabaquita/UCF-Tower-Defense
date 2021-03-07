@@ -162,5 +162,6 @@ Kirk Matthews:
 Christopher Foreman:
 
 Recleph Mere:
+- U001, U022
 - Enable All Towers to be Placed on Map
 - Work on Making Towers Attack Enemy Sprites
