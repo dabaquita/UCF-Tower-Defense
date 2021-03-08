@@ -170,8 +170,8 @@ Kirk Matthews:
 
 Christopher Foreman:
 - U014, U015
-- Firebase Cloud Function Integration
-- Cloud function for creating user account
+- Firebase cloud function integration
+- User account creation
 
 Recleph Mere:
 - U001, U022
