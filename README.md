@@ -169,6 +169,9 @@ Kirk Matthews:
 - Health and Money UI
 
 Christopher Foreman:
+- U014, U015
+- Firebase Cloud Function Integration
+- Cloud function for creating user account
 
 Recleph Mere:
 - U001, U022
