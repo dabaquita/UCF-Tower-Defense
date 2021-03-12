@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pathCreator = GameObject.Find("EnemyPath").GetComponent<PathCreator>();
         health = START_HEALTH;
         transform.position = pathCreator.path.GetPointAtTime(0.0f);
     }
@@ -64,7 +65,7 @@ public class Enemy : MonoBehaviour
 
     public bool IsAtEnd()
     {
-        if (transform.position == pathCreator.path.GetPoint(730))
+        if (transform.position == pathCreator.path.GetPointAtDistance(999999, EndOfPathInstruction.Stop))
         {
             return true;
         }
