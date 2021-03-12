@@ -9,11 +9,12 @@ namespace Tests
     public class TestGameManager
     {
         GameManager gameManager;
+        GameObject obj = new GameObject();
 
         [SetUp]
         public void SetUp()
         {
-            gameManager = new GameManager();
+            gameManager = obj.AddComponent<GameManager>();
         }
 
         [Test]
@@ -32,6 +33,13 @@ namespace Tests
 
       
             Assert.IsNull(gameManager.getMap());
+        }
+
+        [Test]
+        public void TestStartSpawning()
+        {
+            gameManager.startSpawning();
+            Assert.IsTrue(gameManager.spawnBool);
         }
     }
 }
