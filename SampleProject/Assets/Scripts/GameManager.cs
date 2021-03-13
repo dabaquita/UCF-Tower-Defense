@@ -73,10 +73,15 @@ public class GameManager : MonoBehaviour
         spawnBool = true; // triggered by play button
     }
 
-    public void victory()
+    public bool victory()
     {
         // show victory screen with link to home screen
         // give player exp
+        if (waveNumber >= 10 && enemiesAlive <= 0)
+        {
+            return true;
+        }
+        return false;
     }
 
     public IEnumerator spawner()

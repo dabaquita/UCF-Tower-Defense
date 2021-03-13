@@ -11,11 +11,13 @@ namespace Tests
     {
         Enemy en;
         GameObject obj = new GameObject();
+        public PathCreator pathCreator;
 
         [SetUp]
         public void SetUp()
         {
             en = obj.AddComponent<Enemy>();
+            pathCreator = GameObject.Find("EnemyPath").GetComponent<PathCreator>();
         }
 
         [Test]
@@ -56,6 +58,15 @@ namespace Tests
 
             enemy.SetEnemyHealth(100);
             Assert.AreEqual(100, enemy.GetEnemyHealth());
+        }
+
+        [Test]
+        public void TestHasReachedTheEndOfTheMap()
+        {
+            // arbitrary number for "has traversed the entire map"
+            en.transform.position = pathCreator.path.GetPointAtDistance(10000000000, EndOfPathInstruction.Stop);
+            // stop instruction locks position it after it completes the whole thing
+            Assert.AreEqual(en.transform.position, pathCreator.path.GetPointAtTime(1.0f, EndOfPathInstruction.Stop));
         }
     }
 }

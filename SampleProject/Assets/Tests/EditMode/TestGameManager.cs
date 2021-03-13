@@ -41,5 +41,13 @@ namespace Tests
             gameManager.startSpawning();
             Assert.IsTrue(gameManager.spawnBool);
         }
+
+        [Test]
+        public void TestVictoryCondition()
+        {
+            gameManager.enemiesAlive = 0;
+            gameManager.waveNumber = 10;
+            Assert.IsTrue(gameManager.victory());
+        }
     }
 }

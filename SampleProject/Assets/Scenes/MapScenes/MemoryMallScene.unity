@@ -8572,7 +8572,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989562273}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da8a91aca3f830c4a9cb013f0163e5a1, type: 3}
   m_Name: 
@@ -9404,7 +9404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1142587726
 Transform:
   m_ObjectHideFlags: 0
@@ -14712,6 +14712,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb603c4b470355c40a1b2d4794390d4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pathCreator: {fileID: 1142587727}
+  hollanderPrefab: {fileID: 6758350541091441260, guid: 05ad5982f9679984795ee05515123484,
+    type: 3}
+  enemies: []
+  spawnBool: 0
+  waveNumber: 0
+  enemiesAlive: 0
+  waveText: {fileID: 0}
+  gameOverScreen: {fileID: 0}
 --- !u!4 &1972676243
 Transform:
   m_ObjectHideFlags: 0
