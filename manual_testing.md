@@ -1,4 +1,4 @@
-# Manual Test One - Testing the Enemy class's IsAtEnd() method. - Depreceated by automated unit testing, but kept for future reference.
+# Manual Test One - Testing the Enemy class's IsAtEnd() method. - Depreciated by automated unit testing, but kept for future reference.
 
 | No. | Steps to Reproduce | Expected Behaviour |
 |-----|--------------------|--------------------|
