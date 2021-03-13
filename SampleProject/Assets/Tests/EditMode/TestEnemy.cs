@@ -7,17 +7,20 @@ using PathCreation;
 
 namespace Tests
 {
-    [TestFixture]
     public class TestEnemy
     {
-        GameObject enemy;
         Enemy en;
+        GameObject obj = new GameObject();
+
+        [SetUp]
+        public void SetUp()
+        {
+            en = obj.AddComponent<Enemy>();
+        }
 
         [Test]
         public void TestEnemyDamagesPlayer()
         {
-            GameObject enemy = GameObject.Find("hollander");
-            en = enemy.GetComponent<Enemy>();
             Player.setHealth(100);
 
             en.DamagePlayer();
@@ -33,21 +36,6 @@ namespace Tests
             enemy.SetEnemyHealth(-10);
 
             Assert.IsTrue(enemy.IsDead());
-        }
-
-        [Test]
-        public void TestDestroyEnemy()
-        {
-            var testEnemy = new GameObject();
-            var enemy = testEnemy.AddComponent<Enemy>();
-
-            enemy.DestroyEnemy();
-            bool isNull = false;
-            if (enemy == null)
-            {
-                isNull = true;
-            }
-            Assert.IsTrue(isNull);
         }
 
         [Test]
