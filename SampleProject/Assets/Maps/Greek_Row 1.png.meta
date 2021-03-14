@@ -1,0 +1,632 @@
+fileFormatVersion: 2
+guid: 40254c38e3f6a42479b7bb2b7af2f9b8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -567235445108108992
+    second: Greek_Row 1_0
+  - first:
+      213: -6775735724551258948
+    second: Greek_Row 1_1
+  - first:
+      213: -6507930882262226035
+    second: Greek_Row 1_2
+  - first:
+      213: -5701580621061449790
+    second: Greek_Row 1_3
+  - first:
+      213: -4540072965242224885
+    second: Greek_Row 1_4
+  - first:
+      213: -5711925146755705941
+    second: Greek_Row 1_5
+  - first:
+      213: 5710692159284566998
+    second: Greek_Row 1_6
+  - first:
+      213: 8927760944866809925
+    second: Greek_Row 1_7
+  - first:
+      213: -1610341442126312717
+    second: Greek_Row 1_8
+  - first:
+      213: 3376824499738835643
+    second: Greek_Row 1_9
+  - first:
+      213: 8852413764198810209
+    second: Greek_Row 1_10
+  - first:
+      213: 6942390638046319197
+    second: Greek_Row 1_11
+  - first:
+      213: -686374091109503890
+    second: Greek_Row 1_12
+  - first:
+      213: 8844990341805081953
+    second: Greek_Row 1_13
+  - first:
+      213: -4216749580954765705
+    second: Greek_Row 1_14
+  - first:
+      213: -2641863398551763838
+    second: Greek_Row 1_15
+  - first:
+      213: -8831156135469799969
+    second: Greek_Row 1_16
+  - first:
+      213: 8244993633698600330
+    second: Greek_Row 1_17
+  - first:
+      213: -2562450000039853540
+    second: Greek_Row 1_18
+  - first:
+      213: -3625067064763859618
+    second: Greek_Row 1_19
+  - first:
+      213: -7492356828661169056
+    second: Greek_Row 1_20
+  - first:
+      213: 6533639940901910060
+    second: Greek_Row 1_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Greek_Row 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04112563e56c028f0800000000000000
+      internalID: -567235445108108992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 201
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbcb2360240c7f1a0800000000000000
+      internalID: -6775735724551258948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 201
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b27f3d75f2fa5a0800000000000000
+      internalID: -6507930882262226035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 201
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7916722aaefd0b0800000000000000
+      internalID: -5701580621061449790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_4
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 201
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ff16441bb6ef0c0800000000000000
+      internalID: -4540072965242224885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 151
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba35104975a2bb0b0800000000000000
+      internalID: -5711925146755705941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_6
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 151
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbd3c72344704f40800000000000000
+      internalID: 5710692159284566998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 151
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548546e2747c5eb70800000000000000
+      internalID: 8927760944866809925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_8
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 151
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa88f68dfae6a9e0800000000000000
+      internalID: -1610341442126312717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_9
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 151
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbaf4c7cdf3ecde20800000000000000
+      internalID: 3376824499738835643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16249db9a671ada70800000000000000
+      internalID: 8852413764198810209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_11
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 102
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d529fb0c083585060800000000000000
+      internalID: 6942390638046319197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_12
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 102
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ce26496628976f0800000000000000
+      internalID: -686374091109503890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_13
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 102
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1658d056ad7bfba70800000000000000
+      internalID: 8844990341805081953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776f960f8981b75c0800000000000000
+      internalID: -4216749580954765705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_15
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 52
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28447387c37365bd0800000000000000
+      internalID: -2641863398551763838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_16
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 52
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5af45c84e617580800000000000000
+      internalID: -8831156135469799969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_17
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 52
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8556f7a60a1c6270800000000000000
+      internalID: 8244993633698600330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12cce82d49507cd0800000000000000
+      internalID: -2562450000039853540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_19
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d38c506bc21bdc0800000000000000
+      internalID: -3625067064763859618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_20
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064cd29192dc50890800000000000000
+      internalID: -7492356828661169056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Greek_Row 1_21
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2633c7d8e62caa50800000000000000
+      internalID: 6533639940901910060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
