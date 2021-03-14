@@ -22,6 +22,7 @@ public class Enemy : MonoBehaviour
         health = START_HEALTH;
         transform.position = pathCreator.path.GetPointAtTime(0.0f);
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+        gm.RegisterEnemy(this);
     }
 
     // Update is called once per frame
@@ -33,7 +34,8 @@ public class Enemy : MonoBehaviour
 
         if (IsDead())
         {
-            DestroyEnemy();
+            gm.UnRegisterEnemy(this);
+            //DestroyEnemy();
         }
 
         // will be true when the enemy hits the end of the map while still having health
@@ -43,7 +45,8 @@ public class Enemy : MonoBehaviour
         if (IsAtEnd())
         {
             DamagePlayer();
-            DestroyEnemy();
+            gm.UnRegisterEnemy(this);
+            //DestroyEnemy();
         }
     }
 
@@ -85,4 +88,5 @@ public class Enemy : MonoBehaviour
     {
         health = newHealth;
     }
+
 }

@@ -38105,6 +38105,7 @@ MonoBehaviour:
   enemiesAlive: 0
   waveText: {fileID: 34831815}
   gameOverScreen: {fileID: 151072702}
+  EnemyList: []
 --- !u!4 &1663233285
 Transform:
   m_ObjectHideFlags: 0
@@ -41965,7 +41966,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 1
+    vertexPathUpToDate: 0
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 0

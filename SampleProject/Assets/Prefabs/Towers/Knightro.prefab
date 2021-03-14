@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7623118874251740007}
   - component: {fileID: 7623118874251740008}
+  - component: {fileID: 3679457419457505555}
   m_Layer: 0
   m_Name: Knightro
   m_TagString: Tower
@@ -81,3 +82,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3679457419457505555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623118874251740009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b8e41308858834f85c83475dcd02a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 1
+  attackRadius: 3
+  projectile: {fileID: -7960315457415741631, guid: 33c40847706ddf541a863c8ffab5798a,
+    type: 3}
