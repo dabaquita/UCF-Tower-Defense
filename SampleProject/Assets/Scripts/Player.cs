@@ -34,6 +34,20 @@ public class Player : MonoBehaviour
         moneyText.text = money.ToString();
     }
 
+    public int Bank
+    {
+        get
+        {
+            return money;
+        }
+    }
+
+    public void setBank(int newTotal)
+    {
+        setMoney(newTotal);
+    }
+
+    // For Unit Tests
     public static int getHealth()
     {
         return health;

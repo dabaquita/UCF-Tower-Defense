@@ -40,6 +40,13 @@ public class TowerManager : Loader<TowerManager>
     {
         if(towerBtnPressed != null && hit.collider != null && hit.collider.tag == "TowerSide")
         {
+            
+            if (towerBtnPressed.TowerCost > Player.getMoney())
+            {
+                print("Player does not have enough money to buy");
+                return;
+            }
+
             // Check if the spot on the map already has a tower on it
             hit.collider.tag = "TowerSideFull";
 
@@ -48,6 +55,9 @@ public class TowerManager : Loader<TowerManager>
             newTower = Instantiate(towerBtnPressed.TowerObject);
             newTower.transform.position = hit.transform.position;
             DisableDrag();
+
+            // Modify player's bank
+            Player.setMoney(Player.getMoney() - towerBtnPressed.TowerCost);
         }
     }
 
