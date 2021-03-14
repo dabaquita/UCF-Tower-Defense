@@ -31,10 +31,7 @@ public class TowerManager : Loader<TowerManager>
             // Use Raycasting to check if you can put the tower down or not
             RaycastHit2D hit = Physics2D.Raycast(mousePoint, Vector2.zero);
 
-            if(EventSystem.current.IsPointerOverGameObject())
-            {
-                PlaceTower(hit);
-            }
+            PlaceTower(hit);
         }
     }
 

@@ -22,7 +22,7 @@ public class TowerBtn : MonoBehaviour
         }
     }
 
-    public int GetCost
+    public int TowerCost
     {
         get
         {
