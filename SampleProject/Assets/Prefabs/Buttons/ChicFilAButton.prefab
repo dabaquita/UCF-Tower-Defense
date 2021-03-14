@@ -160,3 +160,4 @@ MonoBehaviour:
   towerObject: {fileID: 3815066069533720063, guid: c8b5be791898adb4985c34cd05be00be,
     type: 3}
   dragSprite: {fileID: 21300000, guid: bb345c91f02dee64d8705fe332098b71, type: 3}
+  cost: 600

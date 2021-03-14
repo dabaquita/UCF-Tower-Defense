@@ -17,7 +17,7 @@ TagManager:
   - 
   - 
   - CollisionObject
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 252937367
     locked: 0
   - name: Enemies
     uniqueID: 1849028637

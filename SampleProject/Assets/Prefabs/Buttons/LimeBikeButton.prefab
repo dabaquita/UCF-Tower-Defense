@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 1
+  m_AspectRatio: 1.7658315
 --- !u!114 &6346733643931140842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,3 +160,4 @@ MonoBehaviour:
   towerObject: {fileID: 482759805250454539, guid: 36c26afb0d645f54a903b0ee6bfc75f2,
     type: 3}
   dragSprite: {fileID: 21300000, guid: 9b3feab547f634c20931c7340836fb31, type: 3}
+  cost: 100

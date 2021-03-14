@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0011520386, y: -0.0011444092}
+  m_AnchoredPosition: {x: -0.001159668, y: -0.001159668}
   m_SizeDelta: {x: -0.0023117065, y: -0.002281189}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5532502308109276981
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 1.0429758
+  m_AspectRatio: 1.7768484
 --- !u!114 &5532502308109276977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,3 +160,4 @@ MonoBehaviour:
   towerObject: {fileID: 3787416907089844220, guid: 755511dd9318b4cf5be55553b7551ee5,
     type: 3}
   dragSprite: {fileID: 21300000, guid: 01dea3bd014b544a2bad9ecaa737b0a4, type: 3}
+  cost: 1500

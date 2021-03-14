@@ -8,6 +8,7 @@ public class TowerManager : Loader<TowerManager>
     TowerBtn towerBtnPressed;
     SpriteRenderer spriteRenderer;
     GameObject newTower;
+
     // Start is called before the first frame update
     void Start()
     {
