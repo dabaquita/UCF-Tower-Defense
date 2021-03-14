@@ -35,4 +35,9 @@ public class MapSelection : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName: "LibraryScene");
     }
+
+    public void ToMainMenu()
+    {
+        SceneManager.LoadScene(sceneName: "MenuScene");
+    }
 }

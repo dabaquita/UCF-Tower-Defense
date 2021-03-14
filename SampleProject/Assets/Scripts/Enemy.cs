@@ -13,12 +13,15 @@ public class Enemy : MonoBehaviour
     float distanceTravelled;
     public EndOfPathInstruction endOfPathInstruction;
 
+    GameManager gm;
+
     // Start is called before the first frame update
     void Start()
     {
         pathCreator = GameObject.Find("EnemyPath").GetComponent<PathCreator>();
         health = START_HEALTH;
         transform.position = pathCreator.path.GetPointAtTime(0.0f);
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -40,13 +43,13 @@ public class Enemy : MonoBehaviour
         if (IsAtEnd())
         {
             DamagePlayer();
+            DestroyEnemy();
         }
     }
 
     public void DamagePlayer()
     {
         Player.setHealth(Player.getHealth() - 10);
-        DestroyEnemy();
     }
 
     public bool IsDead()
@@ -61,6 +64,7 @@ public class Enemy : MonoBehaviour
     public void DestroyEnemy()
     {
         DestroyImmediate(gameObject);
+        gm.enemiesAlive--;
     }
 
     public bool IsAtEnd()

@@ -7,17 +7,22 @@ using PathCreation;
 
 namespace Tests
 {
-    [TestFixture]
     public class TestEnemy
     {
-        GameObject enemy;
         Enemy en;
+        GameObject obj = new GameObject();
+        public PathCreator pathCreator;
+
+        [SetUp]
+        public void SetUp()
+        {
+            en = obj.AddComponent<Enemy>();
+            pathCreator = GameObject.Find("EnemyPath").GetComponent<PathCreator>();
+        }
 
         [Test]
         public void TestEnemyDamagesPlayer()
         {
-            GameObject enemy = GameObject.Find("hollander");
-            en = enemy.GetComponent<Enemy>();
             Player.setHealth(100);
 
             en.DamagePlayer();
@@ -33,21 +38,6 @@ namespace Tests
             enemy.SetEnemyHealth(-10);
 
             Assert.IsTrue(enemy.IsDead());
-        }
-
-        [Test]
-        public void TestDestroyEnemy()
-        {
-            var testEnemy = new GameObject();
-            var enemy = testEnemy.AddComponent<Enemy>();
-
-            enemy.DestroyEnemy();
-            bool isNull = false;
-            if (enemy == null)
-            {
-                isNull = true;
-            }
-            Assert.IsTrue(isNull);
         }
 
         [Test]
@@ -68,6 +58,15 @@ namespace Tests
 
             enemy.SetEnemyHealth(100);
             Assert.AreEqual(100, enemy.GetEnemyHealth());
+        }
+
+        [Test]
+        public void TestHasReachedTheEndOfTheMap()
+        {
+            // arbitrary number for "has traversed the entire map"
+            en.transform.position = pathCreator.path.GetPointAtDistance(10000000000, EndOfPathInstruction.Stop);
+            // stop instruction locks position it after it completes the whole thing
+            Assert.AreEqual(en.transform.position, pathCreator.path.GetPointAtTime(1.0f, EndOfPathInstruction.Stop));
         }
     }
 }

@@ -33,7 +33,7 @@ UCF Tower Defense is a game where UCF students battle to save their grades again
   
   Denielle Abaquita
 
-  Kirk Matthews
+  Kirk Matthews (Matthews242)
   
   Christopher Foreman
   
@@ -52,7 +52,7 @@ Denielle Abaquita:
 - Install Unity and verify that it works on local environment
 - Connect Unity to GitHub repository
 
-Kirk Matthews:
+Kirk Matthews (Matthews242):
 - Add minimum of 3 User Stories to the product backlog
 - Adjusted sprint and product backlogs to reflect what was worked on during the week
 - Added requirements to the Trello Board
@@ -83,7 +83,7 @@ Denielle Abaquita:
 - Map graphics
 - System Architecture
 
-Kirk Matthews:
+Kirk Matthews (Matthews242):
 - System Architecture
 
 Christopher Foreman:
@@ -112,7 +112,7 @@ Denielle Abaquita:
 - Tower Sprites
 - Update the UML Diagrams
 
-Kirk Matthews:
+Kirk Matthews (Matthews242):
 - U006, U024, U020
 
 Christopher Foreman:
@@ -136,7 +136,7 @@ Denielle Abaquita:
 - Map graphics
 - Enemy AI and health
 
-Kirk Matthews:
+Kirk Matthews (Matthews242):
 - U018, U028
 - Tower buy menu
 - In-game UI shell
@@ -162,7 +162,7 @@ Denielle Abaquita:
 - Map tilesets
 - Major Class Refactoring
 
-Kirk Matthews:
+Kirk Matthews (Matthews242):
 - U001, U029, U030
 - Audio Control
 - Major Class Refactoring
@@ -177,3 +177,17 @@ Recleph Mere:
 - U001, U022
 - Enable All Towers to be Placed on Map
 - Work on Making Towers Attack Enemy Sprites
+
+# Sprint 6 Task Allocation
+
+Nicholas Nachowicz:
+
+Denielle Abaquita:
+
+Kirk Matthews (Matthews242):
+- U007, U008
+- Enemy spawning
+
+Christopher Foreman:
+
+Recleph Mere:
