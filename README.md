@@ -183,6 +183,9 @@ Recleph Mere:
 Nicholas Nachowicz:
 
 Denielle Abaquita:
+- U007, U025
+- Design GreekRow Map/Scene
+- Implement Tower costs
 
 Kirk Matthews (Matthews242):
 - U007, U008
