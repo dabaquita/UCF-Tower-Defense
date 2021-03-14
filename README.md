@@ -190,4 +190,7 @@ Kirk Matthews (Matthews242):
 
 Christopher Foreman:
 
-Recleph Mere:
+Recleph Mere (KilluaxGonx):
+- U031, U032
+- Projectile used for towers
+- Tower Sprites Attack Enemey Sprites
