@@ -183,6 +183,8 @@ Recleph Mere:
 # Sprint 6 Task Allocation
 
 Nicholas Nachowicz:
+- U021
+- Design Pub Map/Scene
 
 Denielle Abaquita:
 - U007, U025
