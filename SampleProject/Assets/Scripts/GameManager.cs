@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public int enemiesAlive;
     public Text waveText;
     public GameObject gameOverScreen;
+    public List<Enemy> EnemyList = new List<Enemy>();
 
     void Start()
     {
@@ -88,6 +89,8 @@ public class GameManager : MonoBehaviour
     {
         int i;
         waveNumber++;
+        // Alternatively we can have a maximum number of enemies on screen designated. And while the count
+        // of enemies (EnemyList.Count) is less than maximum number of enemies, instantiate an enemy
         for (i = 0; i <= waveNumber - 1; i++)
         {
             // creates new hollander prefab and puts it at the start of the map
@@ -100,5 +103,26 @@ public class GameManager : MonoBehaviour
             Debug.Log("Hollander spawned.");
             yield return new WaitForSeconds(1.0f);
         }
+    }
+
+    public void RegisterEnemy(Enemy enemy)
+    {
+        EnemyList.Add(enemy);
+        Debug.Log("Enemy added to list.");
+    }
+
+    public void UnRegisterEnemy(Enemy enemy)
+    {
+        EnemyList.Remove(enemy);
+        enemy.DestroyEnemy();
+    }
+
+    public void DestroyEnemies()
+    {
+        foreach (Enemy enemy in EnemyList)
+        {
+            enemy.DestroyEnemy();
+        }
+        EnemyList.Clear();
     }
 }

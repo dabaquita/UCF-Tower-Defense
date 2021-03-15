@@ -1,0 +1,1124 @@
+fileFormatVersion: 2
+guid: b5aab695b31774a4595b11ed3dcbc003
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -757594039841476985
+    second: SchoolSupplies_1
+  - first:
+      213: -1469999925249153243
+    second: SchoolSupplies_2
+  - first:
+      213: 2543219702919554329
+    second: SchoolSupplies_3
+  - first:
+      213: 7424530107515115986
+    second: SchoolSupplies_4
+  - first:
+      213: 7518641768321860656
+    second: SchoolSupplies_5
+  - first:
+      213: 4927395977253548966
+    second: SchoolSupplies_0
+  - first:
+      213: 8458299165110726856
+    second: SchoolSupplies_6
+  - first:
+      213: -4097678572792199227
+    second: SchoolSupplies_7
+  - first:
+      213: -6682286850653435329
+    second: SchoolSupplies_8
+  - first:
+      213: -4616270228932580570
+    second: SchoolSupplies_9
+  - first:
+      213: -7165139515525772889
+    second: SchoolSupplies_10
+  - first:
+      213: -4861801886098057665
+    second: SchoolSupplies_11
+  - first:
+      213: -7371839049728504546
+    second: SchoolSupplies_12
+  - first:
+      213: 2153421477372478557
+    second: SchoolSupplies_13
+  - first:
+      213: -4001965902200569476
+    second: SchoolSupplies_14
+  - first:
+      213: -4323988828931936726
+    second: SchoolSupplies_15
+  - first:
+      213: -7241823718070374205
+    second: SchoolSupplies_16
+  - first:
+      213: -3652097747750063126
+    second: SchoolSupplies_17
+  - first:
+      213: -3757590332997730440
+    second: SchoolSupplies_18
+  - first:
+      213: 6949379301136847587
+    second: SchoolSupplies_19
+  - first:
+      213: -849813685393767887
+    second: SchoolSupplies_20
+  - first:
+      213: 6993615062486726340
+    second: SchoolSupplies_21
+  - first:
+      213: 7025697663803845610
+    second: SchoolSupplies_22
+  - first:
+      213: 2951915204150783304
+    second: SchoolSupplies_23
+  - first:
+      213: -6707515401612614678
+    second: SchoolSupplies_24
+  - first:
+      213: 7511936775859396462
+    second: SchoolSupplies_25
+  - first:
+      213: -386068667437189506
+    second: SchoolSupplies_26
+  - first:
+      213: 3326559232071449363
+    second: SchoolSupplies_27
+  - first:
+      213: -1624463050946498242
+    second: SchoolSupplies_28
+  - first:
+      213: 4315185406832755631
+    second: SchoolSupplies_29
+  - first:
+      213: -1554336934471323634
+    second: SchoolSupplies_30
+  - first:
+      213: 814068043944522296
+    second: SchoolSupplies_31
+  - first:
+      213: -8564405546748447410
+    second: SchoolSupplies_32
+  - first:
+      213: -1388110433288234733
+    second: SchoolSupplies_33
+  - first:
+      213: -1898915404709469428
+    second: SchoolSupplies_34
+  - first:
+      213: 2611379863738226727
+    second: SchoolSupplies_35
+  - first:
+      213: -6822627035955168804
+    second: SchoolSupplies_36
+  - first:
+      213: -9218197072735916494
+    second: SchoolSupplies_37
+  - first:
+      213: -5179996048968144651
+    second: SchoolSupplies_38
+  - first:
+      213: 6686949569864102269
+    second: SchoolSupplies_39
+  - first:
+      213: 7628012003076470077
+    second: SchoolSupplies_40
+  - first:
+      213: 3475178256749684695
+    second: SchoolSupplies_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SchoolSupplies_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 590
+        width: 84
+        height: 468
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78eab431c3c7c75f0800000000000000
+      internalID: -757594039841476985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_2
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 503
+        width: 69
+        height: 555
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5276cab3bd2899be0800000000000000
+      internalID: -1469999925249153243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_3
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 499
+        width: 70
+        height: 556
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9156b4268d45b4320800000000000000
+      internalID: 2543219702919554329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_4
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 499
+        width: 63
+        height: 559
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d991a2cbca390760800000000000000
+      internalID: 7424530107515115986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_5
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 507
+        width: 41
+        height: 551
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0344d325ad4975860800000000000000
+      internalID: 7518641768321860656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_0
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 590
+        width: 85
+        height: 468
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3f2ebe880a16440800000000000000
+      internalID: 4927395977253548966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_6
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 499
+        width: 30
+        height: 559
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c07864d64ae16570800000000000000
+      internalID: 8458299165110726856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_7
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 716
+        width: 26
+        height: 342
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7cdf86c0f1227c0800000000000000
+      internalID: -4097678572792199227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_8
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1022
+        width: 27
+        height: 36
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ac98b738fb343a0800000000000000
+      internalID: -6682286850653435329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_9
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 499
+        width: 48
+        height: 550
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b23415fa6bfefb0800000000000000
+      internalID: -4616270228932580570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_10
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 849
+        width: 326
+        height: 210
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9c8fab29f409c90800000000000000
+      internalID: -7165139515525772889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_11
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 499
+        width: 27
+        height: 513
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f361dca81f8678cb0800000000000000
+      internalID: -4861801886098057665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_12
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 639
+        width: 309
+        height: 184
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d44932177f1b990800000000000000
+      internalID: -7371839049728504546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_13
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 57
+        width: 105
+        height: 506
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54cb72ac6d72ed10800000000000000
+      internalID: 2153421477372478557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_14
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 493
+        width: 161
+        height: 101
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c710c1c17392678c0800000000000000
+      internalID: -4001965902200569476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_15
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 558
+        width: 117
+        height: 38
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e21cec11b1ef3c0800000000000000
+      internalID: -4323988828931936726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_16
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 508
+        width: 117
+        height: 38
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0ba6e72bfdf7b90800000000000000
+      internalID: -7241823718070374205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_17
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 64
+        width: 159
+        height: 379
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae37a54b274215dc0800000000000000
+      internalID: -3652097747750063126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_18
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 294
+        width: 48
+        height: 82
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f7a3e208b5adbc0800000000000000
+      internalID: -3757590332997730440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_19
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 312
+        width: 91
+        height: 160
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2d6bda7a7217060800000000000000
+      internalID: 6949379301136847587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_20
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 254
+        width: 92
+        height: 219
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132c6d4a4fad434f0800000000000000
+      internalID: -849813685393767887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_21
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 356
+        width: 30
+        height: 103
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6b75778df4e0160800000000000000
+      internalID: 6993615062486726340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_22
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 356
+        width: 30
+        height: 103
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebe15e2dca408160800000000000000
+      internalID: 7025697663803845610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_23
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 356
+        width: 30
+        height: 103
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d6b7efc3f47f820800000000000000
+      internalID: 2951915204150783304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_24
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 356
+        width: 30
+        height: 103
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae32b69b74e1ae2a0800000000000000
+      internalID: -6707515401612614678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_25
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 356
+        width: 30
+        height: 103
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fda4c92b2cf3860800000000000000
+      internalID: 7511936775859396462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_26
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 60
+        width: 66
+        height: 236
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e767f7aa79864aaf0800000000000000
+      internalID: -386068667437189506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_27
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 269
+        width: 70
+        height: 21
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b3ae72fff4a2e20800000000000000
+      internalID: 3326559232071449363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_28
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 52
+        width: 185
+        height: 304
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e313691467fb479e0800000000000000
+      internalID: -1624463050946498242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_29
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 261
+        width: 31
+        height: 69
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa34732c34e92eb30800000000000000
+      internalID: 4315185406832755631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_30
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 261
+        width: 31
+        height: 69
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0031971bc2ed6ae0800000000000000
+      internalID: -1554336934471323634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_31
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 261
+        width: 31
+        height: 69
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8327f46a2962c4b00800000000000000
+      internalID: 814068043944522296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_32
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 262
+        width: 31
+        height: 69
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e457ca9088e152980800000000000000
+      internalID: -8564405546748447410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_33
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 262
+        width: 31
+        height: 69
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31957da5ae07cbce0800000000000000
+      internalID: -1388110433288234733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_34
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 262
+        width: 31
+        height: 69
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0366c31082b5a5e0800000000000000
+      internalID: -1898915404709469428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_35
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 258
+        width: 70
+        height: 4
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72899bf762c7d3420800000000000000
+      internalID: 2611379863738226727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_36
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 58
+        width: 132
+        height: 182
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd97aeecbd82151a0800000000000000
+      internalID: -6822627035955168804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_37
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 54
+        width: 77
+        height: 185
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ea70a3a92621080800000000000000
+      internalID: -9218197072735916494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_38
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 65
+        width: 65
+        height: 103
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8a35bc905fc18b0800000000000000
+      internalID: -5179996048968144651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_39
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 59
+        width: 154
+        height: 171
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7173be6431dccc50800000000000000
+      internalID: 6686949569864102269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_40
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 65
+        width: 119
+        height: 132
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35f9c970842cd960800000000000000
+      internalID: 7628012003076470077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SchoolSupplies_41
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 61
+        width: 132
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7e9b456305a3030800000000000000
+      internalID: 3475178256749684695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
