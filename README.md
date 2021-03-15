@@ -192,6 +192,10 @@ Kirk Matthews (Matthews242):
 - Enemy spawning
 
 Christopher Foreman:
+- U014, U015
+- Functionality for updating user xp and highscore
+- Tests for user creation, user methods
+- Database security logic
 
 Recleph Mere (KilluaxGonx):
 - U031, U032
