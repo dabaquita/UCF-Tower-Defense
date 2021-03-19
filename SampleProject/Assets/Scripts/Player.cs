@@ -18,6 +18,12 @@ public class Player : MonoBehaviour
     public Text moneyText;
 
     public GameObject levelBlockSpinScooter;
+    public GameObject levelBlockBagels;
+    public GameObject levelBlockChickFilA;
+    public GameObject levelBlockLibrary;
+    public GameObject levelBlockKnugget;
+    public GameObject levelBlockKnightro;
+    public GameObject levelBlockPegasus;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +37,30 @@ public class Player : MonoBehaviour
         if (level >= 3)
         {
             levelBlockSpinScooter.gameObject.SetActive(false);
+        }
+        if (level >= 5)
+        {
+            levelBlockBagels.gameObject.SetActive(false);
+        }
+        if (level >= 8)
+        {
+            levelBlockLibrary.gameObject.SetActive(false);
+        }
+        if (level >= 11)
+        {
+            levelBlockChickFilA.gameObject.SetActive(false);
+        }
+        if (level >= 13)
+        {
+            levelBlockKnugget.gameObject.SetActive(false);
+        }
+        if (level >= 17)
+        {
+            levelBlockKnightro.gameObject.SetActive(false);
+        }
+        if (level >= 20)
+        {
+            levelBlockPegasus.gameObject.SetActive(false);
         }
     }
 
