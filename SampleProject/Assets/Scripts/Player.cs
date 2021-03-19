@@ -44,11 +44,11 @@ public class Player : MonoBehaviour
         }
         if (level >= 8)
         {
-            levelBlockLibrary.gameObject.SetActive(false);
+            levelBlockChickFilA.gameObject.SetActive(false);
         }
         if (level >= 11)
         {
-            levelBlockChickFilA.gameObject.SetActive(false);
+            levelBlockLibrary.gameObject.SetActive(false);
         }
         if (level >= 13)
         {
