@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class TowerManager : Loader<TowerManager>
@@ -8,17 +9,32 @@ public class TowerManager : Loader<TowerManager>
     TowerBtn towerBtnPressed;
     SpriteRenderer spriteRenderer;
     GameObject newTower;
+    GameObject placeableArea;
+    GameObject closeButton;
+    GameObject towerSelectionMenu;
 
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        placeableArea = GameObject.Find("Placeable Areas");
+        closeButton = GameObject.Find("CloseButton");
+        towerSelectionMenu = GameObject.Find("TowerSelection");
     }
 
 
     // Update is called once per frame
     void Update()
     {
+        if(towerSelectionMenu.activeSelf)
+        {
+            placeableArea.SetActive(false);
+        }
+        else 
+        {
+            placeableArea.SetActive(true);
+        }
+
         if(spriteRenderer.enabled)
         {
             FollowMouse();
@@ -32,6 +48,14 @@ public class TowerManager : Loader<TowerManager>
             RaycastHit2D hit = Physics2D.Raycast(mousePoint, Vector2.zero);
 
             PlaceTower(hit);
+        }
+
+        // Use the escape key to disable playing an active tower
+        else if (Input.GetKeyDown(KeyCode.Escape)) 
+        {
+            Debug.Log("Escaped pressed");
+            DisableDrag();
+            towerBtnPressed = null;
         }
     }
 
@@ -54,7 +78,6 @@ public class TowerManager : Loader<TowerManager>
             // Creates a new tower object and position it at the mouse location
             newTower = Instantiate(towerBtnPressed.TowerObject);
             newTower.transform.position = hit.transform.position;
-            DisableDrag();
 
             // Modify player's bank
             Player.setMoney(Player.getMoney() - towerBtnPressed.TowerCost);
@@ -65,6 +88,9 @@ public class TowerManager : Loader<TowerManager>
     {
         towerBtnPressed = towerSelected;
         EnableDrag(towerBtnPressed.DragSprite);
+        // Disable menu
+        Button closeMenu = closeButton.GetComponent<Button>(); 
+        closeMenu.onClick.Invoke();
         Debug.Log("Pressed" + towerSelected.gameObject);
     }
 

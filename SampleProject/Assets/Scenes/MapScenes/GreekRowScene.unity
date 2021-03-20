@@ -2110,8 +2110,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1559236609}
   m_HandleRect: {fileID: 1559236608}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 0.99999994
+  m_Value: 1
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5635,7 +5635,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &379129094
 RectTransform:
@@ -42888,7 +42888,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922209798}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -41.023655, y: -68.55124, z: -818.89856}
+  m_LocalPosition: {x: -41.02365, y: -68.55122, z: -818.89856}
   m_LocalScale: {x: 218.84128, y: 200, z: 200}
   m_Children: []
   m_Father: {fileID: 379129094}
@@ -45451,7 +45451,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 112815874}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.34045315
+  m_Size: 0.34045318
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

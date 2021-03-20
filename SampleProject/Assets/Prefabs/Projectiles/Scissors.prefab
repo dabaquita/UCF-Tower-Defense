@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8527477054165573520}
   - component: {fileID: -1785559551619570640}
   - component: {fileID: -6192010007907550490}
+  - component: {fileID: 9014763647896741421}
   m_Layer: 0
   m_Name: Scissors
   m_TagString: Projectile
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -3652097747750063126, guid: b5aab695b31774a4595b11ed3dcbc003,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -122,5 +123,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd9da783352751c4e95318e185243453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 5
+  attackDamage: 10
   pType: 0
+--- !u!50 &9014763647896741421
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216115806822095280}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
