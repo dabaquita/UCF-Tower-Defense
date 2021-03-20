@@ -8577,10 +8577,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da8a91aca3f830c4a9cb013f0163e5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
   pathCreator: {fileID: 1142587727}
   speed: 20
   endOfPathInstruction: 0
+  EnemyList: []
 --- !u!1 &1011595500
 GameObject:
   m_ObjectHideFlags: 0
@@ -14724,7 +14724,6 @@ MonoBehaviour:
     type: 3}
   gameOverScreen: {fileID: 2874841288100210872, guid: 6d8d0e04573ade946a05bc0b54072fd1,
     type: 3}
-  EnemyList: []
 --- !u!4 &1972676243
 Transform:
   m_ObjectHideFlags: 0

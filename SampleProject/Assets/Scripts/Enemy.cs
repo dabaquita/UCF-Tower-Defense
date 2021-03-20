@@ -5,7 +5,8 @@ using PathCreation;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] int health;
+    private int health;
+    private const int START_HEALTH = 50;
 
     public PathCreator pathCreator;
     public float speed = 5;
@@ -18,6 +19,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         pathCreator = GameObject.Find("EnemyPath").GetComponent<PathCreator>();
+        health = START_HEALTH;
         transform.position = pathCreator.path.GetPointAtTime(0.0f);
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         gm.RegisterEnemy(this);
@@ -40,26 +42,11 @@ public class Enemy : MonoBehaviour
         // using 3 since the array in Path.cs only has 4 segments and I assume that's the last
         // one
 
-        else if (IsAtEnd())
+        if (IsAtEnd())
         {
             DamagePlayer();
             gm.UnRegisterEnemy(this);
             //DestroyEnemy();
-        }
-    }
-
-    // When a projectile collides with an enemy, destroy the projectile
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Projectile")
-        {
-            Debug.Log("Projectile Collision: " + health);
-            Projectile newP = collision.gameObject.GetComponent<Projectile>();
-            if( newP != null)
-            {
-                DamageEnemy(newP.AttackDamage);
-                Destroy(collision.gameObject);
-            }
         }
     }
 
@@ -102,8 +89,4 @@ public class Enemy : MonoBehaviour
         health = newHealth;
     }
 
-    public void DamageEnemy(int damage)
-    {
-        health -= damage;
-    }
 }

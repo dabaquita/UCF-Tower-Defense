@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 482759805250454533}
   - component: {fileID: 482759805250454538}
-  - component: {fileID: 4238039039716841981}
   m_Layer: 0
   m_Name: LimeBike
   m_TagString: Tower
@@ -68,9 +67,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: -987441765
+  m_SortingLayer: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 9b3feab547f634c20931c7340836fb31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -82,19 +81,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4238039039716841981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482759805250454539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89b8e41308858834f85c83475dcd02a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeBetweenAttacks: 0.5
-  attackRadius: 10
-  projectile: {fileID: -6192010007907550490, guid: f0e1d21786ccc6148b8b35475fffdc7d,
-    type: 3}
