@@ -41,13 +41,16 @@ public class GameManager : MonoBehaviour
 
         if (spawnBool)
         {
-            StartCoroutine(spawner());
+            if (enemiesAlive == 0)
+            {
+                StartCoroutine(spawner());
+                spawnBool = false;
+            }
             spawnBool = false;
         }
 
-        if (waveNumber >= 10)
+        if (victory())
         {
-            victory();
             Debug.Log("Game Over. Players wins.");
         }
         waveText.text = waveNumber.ToString();

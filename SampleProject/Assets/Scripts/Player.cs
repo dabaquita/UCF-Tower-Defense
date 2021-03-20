@@ -11,11 +11,19 @@ public class Player : MonoBehaviour
     private static int money;
     private const int START_MONEY = 300;
 
-    private static int level;
-    private const int START_LEVEL = 0;
+    public static int level;
+    public int START_LEVEL = 0;
 
     public Text healthText;
     public Text moneyText;
+
+    public GameObject levelBlockSpinScooter;
+    public GameObject levelBlockBagels;
+    public GameObject levelBlockChickFilA;
+    public GameObject levelBlockLibrary;
+    public GameObject levelBlockKnugget;
+    public GameObject levelBlockKnightro;
+    public GameObject levelBlockPegasus;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +33,35 @@ public class Player : MonoBehaviour
         level = START_LEVEL;
         healthText.text = health.ToString();
         moneyText.text = money.ToString();
+
+        if (level >= 3)
+        {
+            levelBlockSpinScooter.gameObject.SetActive(false);
+        }
+        if (level >= 5)
+        {
+            levelBlockBagels.gameObject.SetActive(false);
+        }
+        if (level >= 8)
+        {
+            levelBlockChickFilA.gameObject.SetActive(false);
+        }
+        if (level >= 11)
+        {
+            levelBlockLibrary.gameObject.SetActive(false);
+        }
+        if (level >= 13)
+        {
+            levelBlockKnugget.gameObject.SetActive(false);
+        }
+        if (level >= 17)
+        {
+            levelBlockKnightro.gameObject.SetActive(false);
+        }
+        if (level >= 20)
+        {
+            levelBlockPegasus.gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame

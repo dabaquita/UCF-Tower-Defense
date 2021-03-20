@@ -5057,7 +5057,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Library
+  m_Text: The Knight's Pub
 --- !u!222 &1340633902
 CanvasRenderer:
   m_ObjectHideFlags: 0
