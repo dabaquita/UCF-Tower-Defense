@@ -207,3 +207,18 @@ Recleph Mere (KilluaxGonx):
 - U031, U032
 - Projectile used for towers
 - Tower Sprites Attack Enemey Sprites
+
+# Sprint 7 Task Allocation
+
+Nicholas Nachowicz:
+
+Denielle Abaquita:
+
+Kirk Matthews (Matthews242):
+- U010, U026
+- Wave spawning bug fixes
+- Tower unlocks based on level
+
+Christopher Foreman:
+
+Recleph Mere (KilluaxGonx):
