@@ -222,3 +222,10 @@ Kirk Matthews (Matthews242):
 Christopher Foreman:
 
 Recleph Mere (KilluaxGonx):
+- U031 
+- Fixed Bug were Towers could be placed on Tower Selection Menu
+- Fixed Bug were draggable sprite disappeared but user could still place Towers
+- Added new function to cancel Tower placement using Esc key
+- Added new function that disables Tower placement when selection menu is open
+- Towers Sprites now fire projectiles at Enemy Sprites
+- Tower Sprites now damage Enemy Sprites
