@@ -215,6 +215,9 @@ Recleph Mere (KilluaxGonx):
 Nicholas Nachowicz:
 
 Denielle Abaquita:
+- U021, U010, U020
+- Tower unlocks based on level
+- Student Union map and scene
 
 Kirk Matthews (Matthews242):
 - U010, U026
