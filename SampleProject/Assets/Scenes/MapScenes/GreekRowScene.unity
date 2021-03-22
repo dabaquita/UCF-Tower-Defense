@@ -2110,8 +2110,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1559236609}
   m_HandleRect: {fileID: 1559236608}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 1
+  m_Value: 0
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5718,7 +5718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7737e730a479e540b1c6cbca9daadbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  START_LEVEL: 10
+  START_LEVEL: 99
   healthText: {fileID: 1904911223}
   moneyText: {fileID: 1881672200}
   levelBlockSpinScooter: {fileID: 1821571811}
@@ -38740,6 +38740,7 @@ MonoBehaviour:
   waveText: {fileID: 34831815}
   gameOverScreen: {fileID: 151072702}
   EnemyList: []
+  moneyGiven: 00000000000000000000
 --- !u!4 &1663233285
 Transform:
   m_ObjectHideFlags: 0
@@ -45451,7 +45452,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 112815874}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.34045318
+  m_Size: 0.34045315
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

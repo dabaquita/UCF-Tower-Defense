@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour
         if (victory())
         {
             Debug.Log("Game Over. Players wins.");
+
         }
         waveText.text = waveNumber.ToString();
 
