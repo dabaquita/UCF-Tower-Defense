@@ -5,7 +5,8 @@ using PathCreation;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] int health;
+    [SerializeField] int health = 50;
+    [SerializeField] int moneyAwarded = 50;
 
     public PathCreator pathCreator;
     public float speed = 5;
@@ -72,6 +73,7 @@ public class Enemy : MonoBehaviour
     {
         if (health <= 0)
         {
+            Player.setMoney(Player.getMoney() + moneyAwarded);
             return true;
         }
         return false;
