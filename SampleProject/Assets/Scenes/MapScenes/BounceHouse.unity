@@ -686,7 +686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &159571683
 Transform:
   m_ObjectHideFlags: 0
@@ -695,7 +695,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159571682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1688.7991}
+  m_LocalPosition: {x: 0, y: 0, z: -1688.7977}
   m_LocalScale: {x: 218.84128, y: 200, z: 200}
   m_Children: []
   m_Father: {fileID: 45169005}
@@ -716,43 +716,46 @@ MonoBehaviour:
   editorData:
     _bezierPath:
       points:
-      - {x: 31.040396, y: -27.243652, z: 0}
-      - {x: 31.339087, y: -22.016636, z: 0}
-      - {x: 31.189741, y: -20.971231, z: 0}
-      - {x: 31.339083, y: -16.341593, z: 0}
-      - {x: 31.555809, y: -9.62298, z: 0}
-      - {x: 47.107815, y: -16.130772, z: 0}
-      - {x: 47.260254, y: -10.232046, z: 0}
-      - {x: 47.41569, y: -4.217279, z: 0}
-      - {x: 46.98524, y: 1.5488997, z: 0}
-      - {x: 47.260254, y: 4.757283, z: 0}
-      - {x: 47.680527, y: 9.660336, z: 0}
-      - {x: 33.67177, y: 5.597808, z: 0}
-      - {x: 31.378399, y: 8.587522, z: 0}
-      - {x: 29.51315, y: 11.019123, z: 0}
-      - {x: 1.4517279, y: 10.080622, z: 0}
-      - {x: 1.4360938, y: 8.565241, z: 0}
-      - {x: 1.291781, y: -5.4227448, z: 0}
-      - {x: 2.0503662, y: -15.755465, z: 0}
-      - {x: 1.707675, y: -19.326395, z: 0}
-      - {x: 1.410787, y: -22.420044, z: 0}
-      - {x: -33.821712, y: -20.763237, z: 0}
-      - {x: -37.918365, y: -20.88801, z: 0}
-      - {x: -39.785557, y: -20.94488, z: 0}
-      - {x: -38.984932, y: -14.412536, z: 0}
-      - {x: -39.14009, y: -7.8957286, z: 0}
-      - {x: -39.22362, y: -4.3873444, z: 0}
-      - {x: -45.921154, y: -8.083124, z: 0}
-      - {x: -46.097237, y: -2.8131661, z: 0}
-      - {x: -46.23162, y: 1.2087846, z: 0}
-      - {x: -39.247997, y: -0.8665221, z: 0}
-      - {x: -39.089584, y: 2.3410532, z: 0}
-      - {x: -38.83684, y: 7.4586453, z: 0}
-      - {x: -39.284794, y: 7.41631, z: 0}
-      - {x: -38.894382, y: 12.686771, z: 0}
-      - {x: -38.63482, y: 16.190802, z: 0}
-      - {x: -43.969635, y: 14.638782, z: 0}
-      - {x: -48.45929, y: 15.029187, z: 0}
+      - {x: -49.824432, y: -18.740267, z: 0}
+      - {x: -32.471592, y: -18.436516, z: 0}
+      - {x: -29.725796, y: -18.865547, z: 0}
+      - {x: -29.725796, y: -18.35071, z: 0}
+      - {x: -29.725796, y: -13.426903, z: 0}
+      - {x: -30.014519, y: -4.412348, z: 0}
+      - {x: -29.974737, y: 5.622213, z: 0}
+      - {x: -29.974228, y: 5.750496, z: 0}
+      - {x: -28.943468, y: 5.71185, z: 0}
+      - {x: -17.066925, y: 5.71185, z: 0}
+      - {x: -16.887653, y: 5.71185, z: 0}
+      - {x: -16.870905, y: -1.0771118, z: 0}
+      - {x: -16.798016, y: -12.036384, z: 0}
+      - {x: -16.796072, y: -12.328684, z: 0}
+      - {x: -7.4385257, y: -12.315925, z: 0}
+      - {x: 8.755829, y: -12.179838, z: 0}
+      - {x: 9.2117, y: -12.176007, z: 0}
+      - {x: 9.002688, y: -10.856039, z: 0}
+      - {x: 8.844318, y: 4.1801076, z: 0}
+      - {x: 8.84195, y: 4.404922, z: 0}
+      - {x: 5.467, y: 4.035425, z: 0}
+      - {x: -2.3531046, y: 4.118618, z: 0}
+      - {x: -2.5246, y: 4.1204424, z: 0}
+      - {x: -2.624369, y: 7.776015, z: 0}
+      - {x: -2.4362974, y: 11.938721, z: 0}
+      - {x: -2.4225335, y: 12.243365, z: 0}
+      - {x: 5.460683, y: 12.220622, z: 0}
+      - {x: 21.741533, y: 12.069492, z: 0}
+      - {x: 21.773859, y: 12.069192, z: 0}
+      - {x: 21.985401, y: -12.032361, z: 0}
+      - {x: 21.98423, y: -15.113579, z: 0}
+      - {x: 21.984163, y: -15.289355, z: 0}
+      - {x: 29.454363, y: -15.289414, z: 0}
+      - {x: 36.310493, y: -15.289358, z: 0}
+      - {x: 36.662014, y: -15.289355, z: 0}
+      - {x: 36.257126, y: -11.237387, z: 0}
+      - {x: 36.428486, y: -2.3849707, z: 0}
+      - {x: 36.436405, y: -1.9759066, z: 0}
+      - {x: 50.111076, y: -2.4006135, z: 0}
+      - {x: 49.88542, y: -2.4573197, z: 0}
       isClosed: 0
       space: 1
       controlMode: 0
@@ -775,9 +778,10 @@ MonoBehaviour:
       - 0
       - 0
       - 0
+      - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 0
+    vertexPathUpToDate: 1
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
@@ -2257,6 +2261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da8a91aca3f830c4a9cb013f0163e5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
   pathCreator: {fileID: 159571684}
   speed: 20
   endOfPathInstruction: 0
@@ -3194,6 +3199,7 @@ Transform:
   - {fileID: 85848148}
   - {fileID: 1668223547}
   - {fileID: 1338414942}
+  - {fileID: 1208000322}
   m_Father: {fileID: 45169005}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4018,6 +4024,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170165128}
   m_CullTransparentMesh: 0
+--- !u!1 &1208000321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1208000322}
+  m_Layer: 0
+  m_Name: PlaceableAreas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1208000322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208000321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 971255615}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1214180873
 GameObject:
   m_ObjectHideFlags: 0
@@ -4643,7 +4679,7 @@ GameObject:
   - component: {fileID: 1338414944}
   - component: {fileID: 1338414943}
   m_Layer: 0
-  m_Name: EnemyPath
+  m_Name: EnemyPathTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9025,8 +9061,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7737e730a479e540b1c6cbca9daadbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  START_LEVEL: 0
   healthText: {fileID: 1886001175}
   moneyText: {fileID: 1301825326}
+  levelBlockSpinScooter: {fileID: 0}
+  levelBlockBagels: {fileID: 0}
+  levelBlockChickFilA: {fileID: 0}
+  levelBlockLibrary: {fileID: 0}
+  levelBlockKnugget: {fileID: 0}
+  levelBlockKnightro: {fileID: 0}
+  levelBlockPegasus: {fileID: 0}
 --- !u!1 &1500833887
 GameObject:
   m_ObjectHideFlags: 0
