@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8821259236557612563}
   - component: {fileID: 3079708570981722620}
+  - component: {fileID: -4354711207186109775}
   m_Layer: 0
   m_Name: Pegasus
   m_TagString: Tower
@@ -81,3 +82,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-4354711207186109775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3787416907089844220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b8e41308858834f85c83475dcd02a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 0
+  attackRadius: 0
+  projectile: {fileID: 0}

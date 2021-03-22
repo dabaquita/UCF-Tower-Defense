@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4409642250141459148}
   - component: {fileID: 3602823671032699526}
+  - component: {fileID: 8294364909790016965}
   m_Layer: 0
   m_Name: Knugget
   m_TagString: Tower
@@ -81,3 +82,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8294364909790016965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876069419481886453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b8e41308858834f85c83475dcd02a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 0
+  attackRadius: 0
+  projectile: {fileID: 0}
