@@ -213,6 +213,10 @@ Recleph Mere (KilluaxGonx):
 # Sprint 7 Task Allocation
 
 Nicholas Nachowicz:
+- U021
+- Tower Placement PUB map
+- Tower Placement CB2 map
+- Design PUB map
 
 Denielle Abaquita:
 - U021, U010, U020
