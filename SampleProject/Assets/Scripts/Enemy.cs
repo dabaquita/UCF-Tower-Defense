@@ -7,9 +7,9 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] int health = 50;
     [SerializeField] int moneyAwarded = 50;
+    [SerializeField] float speed = 5;
 
     public PathCreator pathCreator;
-    public float speed = 5;
     float distanceTravelled;
     public EndOfPathInstruction endOfPathInstruction;
 
