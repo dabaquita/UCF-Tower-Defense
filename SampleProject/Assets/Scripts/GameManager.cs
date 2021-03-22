@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public Text waveText;
     public GameObject gameOverScreen;
     public List<Enemy> EnemyList = new List<Enemy>();
+    public bool[] moneyGiven = new bool[10];
 
     void Start()
     {
@@ -27,6 +28,10 @@ public class GameManager : MonoBehaviour
         waveNumber = 0;
         enemiesAlive = 0;
         waveText.text = waveNumber.ToString();
+        for (int i = 0; i < 10; i++)
+        {
+            moneyGiven[i] = false;
+        }
     }
 
     // Update is called once per frame
@@ -47,6 +52,12 @@ public class GameManager : MonoBehaviour
                 spawnBool = false;
             }
             spawnBool = false;
+        }
+
+        // awards money once after wave completion
+        if (waveNumber >= 1 && enemiesAlive == 0)
+        {
+            giveMoney();
         }
 
         if (victory())
@@ -127,5 +138,15 @@ public class GameManager : MonoBehaviour
             enemy.DestroyEnemy();
         }
         EnemyList.Clear();
+    }
+
+    public void giveMoney()
+    {
+        // only awards money if money has not been awarded for a specific wave
+        if (!moneyGiven[waveNumber - 1])
+        {
+            Player.setMoney(Player.getMoney() + 100);
+            moneyGiven[waveNumber - 1] = true;
+        }
     }
 }
