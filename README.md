@@ -220,6 +220,10 @@ Kirk Matthews (Matthews242):
 - Tower unlocks based on level
 
 Christopher Foreman:
+- U014, U015
+- Created Login UI 
+- Created Signup UI 
+- Finished user signup/login
 
 Recleph Mere (KilluaxGonx):
 - U031 
