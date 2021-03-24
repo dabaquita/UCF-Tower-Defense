@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] int health = 50;
     [SerializeField] int moneyAwarded = 50;
     [SerializeField] float speed = 5;
+    [SerializeField] int damageDealt = 1;
 
     public PathCreator pathCreator;
     float distanceTravelled;
@@ -66,7 +67,7 @@ public class Enemy : MonoBehaviour
 
     public void DamagePlayer()
     {
-        Player.setHealth(Player.getHealth() - 10);
+        Player.setHealth(Player.getHealth() - damageDealt);
     }
 
     public bool IsDead()
