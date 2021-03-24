@@ -23873,14 +23873,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb603c4b470355c40a1b2d4794390d4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathCreator: {fileID: 0}
-  hollanderPrefab: {fileID: 0}
+  pathCreator: {fileID: 1382452938}
+  hollanderPrefab: {fileID: 6758350541091441260, guid: 05ad5982f9679984795ee05515123484,
+    type: 3}
   enemies: []
   spawnBool: 0
   waveNumber: 0
   enemiesAlive: 0
-  waveText: {fileID: 0}
-  gameOverScreen: {fileID: 0}
+  waveText: {fileID: 798709834}
+  gameOverScreen: {fileID: 2874841288100210872, guid: 6d8d0e04573ade946a05bc0b54072fd1,
+    type: 3}
   EnemyList: []
   moneyGiven: 00000000000000000000
 --- !u!4 &595088388

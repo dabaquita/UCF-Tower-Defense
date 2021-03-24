@@ -7610,7 +7610,8 @@ MonoBehaviour:
   waveNumber: 0
   enemiesAlive: 0
   waveText: {fileID: 102896124}
-  gameOverScreen: {fileID: 0}
+  gameOverScreen: {fileID: 2874841288100210872, guid: 6d8d0e04573ade946a05bc0b54072fd1,
+    type: 3}
   EnemyList: []
   moneyGiven: 00000000000000000000
 --- !u!4 &448538046
