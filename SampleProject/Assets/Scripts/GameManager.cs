@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverScreen;
     public List<Enemy> EnemyList = new List<Enemy>();
     public bool[] moneyGiven = new bool[10];
+    public GameObject victoryScreen;
 
     void Start()
     {
@@ -63,7 +64,7 @@ public class GameManager : MonoBehaviour
         if (victory())
         {
             Debug.Log("Game Over. Players wins.");
-
+            victoryScreen.gameObject.SetActive(true);
         }
         waveText.text = waveNumber.ToString();
 
@@ -91,9 +92,7 @@ public class GameManager : MonoBehaviour
 
     public bool victory()
     {
-        // show victory screen with link to home screen
-        // give player exp
-        if (waveNumber >= 10 && enemiesAlive <= 0)
+        if (waveNumber >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0)
         {
             return true;
         }
