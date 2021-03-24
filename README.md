@@ -242,3 +242,20 @@ Recleph Mere (KilluaxGonx):
 - Added new function that disables Tower placement when selection menu is open
 - Towers Sprites now fire projectiles at Enemy Sprites
 - Tower Sprites now damage Enemy Sprites
+
+# Sprint 7 Task Allocation
+
+Nicholas Nachowicz:
+
+
+Denielle Abaquita:
+- Finalize all remaining map scenes
+- Game balancing with points and damage
+
+Kirk Matthews (Matthews242):
+
+
+Christopher Foreman:
+
+
+Recleph Mere (KilluaxGonx):
