@@ -35204,7 +35204,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathCreator: {fileID: 1922209800}
+  angellPrefab: {fileID: 6758350541091441260, guid: 84cc25e6215024e8197350534fab262e,
+    type: 3}
+  guhaPrefab: {fileID: 6758350541091441260, guid: 22a01654900cb4d4694e7c83e9b60e8f,
+    type: 3}
   hollanderPrefab: {fileID: 6758350541091441260, guid: 05ad5982f9679984795ee05515123484,
+    type: 3}
+  leineckerPrefab: {fileID: 6758350541091441260, guid: fa5cef412d7e8450c827d954f8451fd7,
+    type: 3}
+  meadePrefab: {fileID: 6758350541091441260, guid: c93f1ce7149184ba99b956de00c63a40,
+    type: 3}
+  szumlanskiPrefab: {fileID: 6758350541091441260, guid: c93f1ce7149184ba99b956de00c63a40,
     type: 3}
   enemies: []
   spawnBool: 0

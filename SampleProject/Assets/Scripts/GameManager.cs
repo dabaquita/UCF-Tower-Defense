@@ -9,7 +9,12 @@ public class GameManager : MonoBehaviour
 {
     private string currentMap;
     public PathCreator pathCreator;
+    public GameObject angellPrefab;
+    public GameObject guhaPrefab;
     public GameObject hollanderPrefab;
+    public GameObject leineckerPrefab;
+    public GameObject meadePrefab;
+    public GameObject szumlanskiPrefab;
     public GameObject[] enemies;
     public bool spawnBool = false;
     public int waveNumber;
