@@ -64,7 +64,6 @@ public class TowerManager : Loader<TowerManager>
     {
         if(towerBtnPressed != null && hit.collider != null && hit.collider.tag == "TowerSide")
         {
-            
             if (towerBtnPressed.TowerCost > Player.getMoney())
             {
                 print("Player does not have enough money to buy");
