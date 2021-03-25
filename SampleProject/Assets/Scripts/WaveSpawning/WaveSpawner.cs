@@ -4,17 +4,19 @@ using System.Collections.Generic;
 
 public class WaveSpawner
 {
-    private Dictionary<String, GameObject> enemyDictionary;
+    private Dictionary<string, GameObject> enemyDictionary;
 
     public WaveSpawner(GameObject[] enemies)
     {
+        enemyDictionary = new Dictionary<string, GameObject>();
+
         foreach (GameObject enemy in enemies)
         {
             enemyDictionary[enemy.name] = enemy;
         }
     }
 
-    public List<GameObject> SpawnEnemy(String name, int num, List<GameObject> enemies)
+    public List<GameObject> SpawnEnemy(string name, int num, List<GameObject> enemies)
     {
         if (!enemyDictionary.ContainsKey(name))
         {

@@ -7,6 +7,6 @@ public class SurvivalSpawner : WaveSpawner
 
     public SurvivalSpawner(GameObject[] enemies) : base(enemies)
     {
-        waveNumber = 1;
+        waveNumber = 0;
     }
 }

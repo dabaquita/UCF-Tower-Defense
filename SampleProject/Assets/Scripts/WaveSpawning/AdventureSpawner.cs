@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using PathCreation;
 
 public class AdventureSpawner : WaveSpawner
 {
@@ -10,27 +7,17 @@ public class AdventureSpawner : WaveSpawner
 
     public AdventureSpawner(GameObject[] enemies) : base(enemies)
     {
-        waveNumber = 1;
+        waveNumber = 0;
     }
 
-    /*
-     * List<GameObject> wave = adventureSpawner.GetWave(waveNumber++);
-
-        foreach (GameObject enemy in wave)
-        {
-            GameObject spawnedEnemy = Instantiate(enemy, pathCreator.path.GetPointAtTime(0.0f), Quaternion.identity);
-
-            if (waveNumber > 10 && spawnedEnemy.name.Equals("meade"))
-                spawnedEnemy.GetComponent<Enemy>().SetSpeed(90);
-
-            enemiesAlive++;
-            yield return new WaitForSeconds(0.8f);
-        }
-     */
-
-    public List<GameObject> GetWave(int waveNum)
+    public int getWaveNumber()
     {
-        if (waveNumber > 10)
+        return waveNumber;
+    }
+
+    public List<GameObject> GetNextWave()
+    {
+        if (waveNumber >= 10)
         {
             Debug.Log("Attention: Wave Number maxes out at 10. Cannot spawn anymore.");
             return null;
@@ -38,8 +25,8 @@ public class AdventureSpawner : WaveSpawner
 
         List<GameObject> wave = new List<GameObject>();
 
-        Debug.Log($"Wave: {waveNum}");
-        switch (waveNum)
+        Debug.Log($"Wave: {waveNumber + 1}");
+        switch (waveNumber + 1)
         {
             case 1:
                 wave = SpawnEnemy("angell", 8, wave);
@@ -113,6 +100,7 @@ public class AdventureSpawner : WaveSpawner
                 break;
         }
 
+        waveNumber++;
         return wave;
     }
 }

@@ -169,6 +169,7 @@ MonoBehaviour:
   health: 50
   moneyAwarded: 50
   speed: 20
+  damageDealt: 1
   pathCreator: {fileID: 1569986781}
   endOfPathInstruction: 0
 --- !u!114 &2373912
@@ -6297,17 +6298,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathCreator: {fileID: 1569986781}
-  hollanderPrefab: {fileID: 6758350541091441260, guid: 05ad5982f9679984795ee05515123484,
-    type: 3}
-  enemies: []
   spawnBool: 0
-  waveNumber: 0
-  enemiesAlive: 0
   waveText: {fileID: 102896124}
+  moneyGiven: 00000000000000000000
   gameOverScreen: {fileID: 2874841288100210872, guid: 6d8d0e04573ade946a05bc0b54072fd1,
     type: 3}
+  victoryScreen: {fileID: 0}
+  waveNumber: 0
+  enemiesAlive: 0
+  enemies:
+  - {fileID: 6758350541091441260, guid: 84cc25e6215024e8197350534fab262e, type: 3}
+  - {fileID: 6758350541091441260, guid: 22a01654900cb4d4694e7c83e9b60e8f, type: 3}
+  - {fileID: 6758350541091441260, guid: 05ad5982f9679984795ee05515123484, type: 3}
+  - {fileID: 6758350541091441260, guid: fa5cef412d7e8450c827d954f8451fd7, type: 3}
+  - {fileID: 6758350541091441260, guid: c93f1ce7149184ba99b956de00c63a40, type: 3}
+  - {fileID: 6758350541091441260, guid: 59b15a203348d4e07abb8ff22911252b, type: 3}
   EnemyList: []
-  moneyGiven: 00000000000000000000
+  wave: []
 --- !u!4 &448538046
 Transform:
   m_ObjectHideFlags: 0
