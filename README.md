@@ -253,6 +253,7 @@ Nicholas Nachowicz:
 Denielle Abaquita:
 - Finalize all remaining map scenes
 - Game balancing with points and damage
+- Refactored Wave Spawning for both Adventure and Survival modes
 
 Kirk Matthews (Matthews242):
 - Tailored invidual waves for adventure mode
