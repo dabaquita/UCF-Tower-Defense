@@ -40,4 +40,8 @@ public class MapSelection : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName: "MenuScene");
     }
+
+    public void ToLogin() {
+        SceneManager.LoadScene(sceneName: "Login");
+    }
 }

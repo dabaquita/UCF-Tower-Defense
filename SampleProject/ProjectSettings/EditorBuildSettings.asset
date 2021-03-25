@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MapScenes/MemoryMallScene.unity
     guid: 9fea3bfa7aa894cdcb792d5699fd0616
+  - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: 44abe7af2dbd143a0a257cbfd3084b07
   m_configObjects: {}

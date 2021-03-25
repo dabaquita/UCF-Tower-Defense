@@ -12,6 +12,8 @@ interface User {
     username: string
     currentLevel: number
     xp: number
+    highestWave: number
+    unlockedMaps: Record<string, boolean>
 }
 
 
@@ -24,11 +26,37 @@ function validateString(value: any): string {
     }
 }
 
+//Helper for validating outside data within a cloud function.
+function validateNumber(value: any): number {
+    if (typeof value !== 'number') {
+        throw new HttpsError('invalid-argument', `Validation failed: ${typeof value} is not a number.`)
+    } else {
+        return value
+    }
+}
+
 
 export const FireKey = {
     users: 'Users',
-    maps: 'Maps',
-    mapInfo: 'MapInfo'
+    meta: 'Meta'
+}
+
+
+function getMapNames(): Promise<string[]> {
+    return db.collection(FireKey.meta).doc('Maps').get().then(doc => {
+        if (doc.exists) {
+            return doc.data()!.names as string[]
+        } else {
+            return []
+        }
+    }).catch(() => {
+        return []
+    })
+}
+
+function isValidUsername(str: string): boolean {
+    const r = new RegExp('(([A-z]|[0-9]){6,15})')
+    return str.match(r) !== null
 }
 
 
@@ -38,20 +66,66 @@ export const createUser = functions.https.onCall((data, context) => {
     const email: string = validateString(data.email)
     const password: string = validateString(data.password)
 
-    //TODO: validate username with a regex
+    if (!isValidUsername(username)) {
+        throw new HttpsError('aborted', 'User name must be an alphanumeric string between 6 and 15 characters.')
+    }
 
     return admin.auth().createUser({
         uid: username,
         displayName: username,
         email: email,
         password: password
-    }).then(result => {
+    }).then(async result => {
         const userInfo: User = {
             username: username,
             currentLevel: 0,
-            xp: 0
+            xp: 0,
+            highestWave: 0,
+            unlockedMaps: {}
         }
-        return db.collection(FireKey.users).doc(username).set({ userInfo })
+
+        const mapNames = await getMapNames()
+        mapNames.forEach(name => {
+            userInfo.unlockedMaps[name] = false
+        })
+
+        return db.collection(FireKey.users).doc(username).set(userInfo)
     })
+
+})
+
+export const setHighestWave = functions.https.onCall((data, context) => {
+
+    const uid = context.auth?.uid
+    if (uid === undefined) {
+        throw new HttpsError('unauthenticated', 'Not authenticated')
+    }
+
+    const newHighestWave = validateNumber(data.highestWave)
+
+    return db.collection(FireKey.users).doc(uid).update({
+        'highestWave': newHighestWave
+    }).then(() => {
+        return null
+    })
+})
+
+
+export const unlockMap = functions.https.onCall((data, context) => {
+
+    const uid = context.auth?.uid
+    if (uid === undefined) {
+        throw new HttpsError('unauthenticated', 'Not authenticated')
+    }
+
+    const mapName = validateString(data.mapName)
+
+    const mapData: Record<string, boolean> = {}
+    mapData[`unlockedMaps.${mapName}`] = true
+
+    return db.collection(FireKey.users).doc(uid).update(mapData)
+        .then(() => {
+            return null
+        })
 
 })
