@@ -245,7 +245,7 @@ Recleph Mere (KilluaxGonx):
 - Towers Sprites now fire projectiles at Enemy Sprites
 - Tower Sprites now damage Enemy Sprites
 
-# Sprint 7 Task Allocation
+# Sprint 8 Task Allocation
 
 Nicholas Nachowicz:
 
