@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum projectileType
 {
-    scissors, pen, stapler
+    scissors, pen, stapler, poo, lime, fireball, sword, bagel, fry
 };
 
 public class Projectile : MonoBehaviour
