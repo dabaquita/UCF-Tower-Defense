@@ -255,7 +255,8 @@ Denielle Abaquita:
 - Game balancing with points and damage
 
 Kirk Matthews (Matthews242):
-
+- Tailored invidual waves for adventure mode
+- Made survival mode throw random waves at you until your inevitable death
 
 Christopher Foreman:
 
