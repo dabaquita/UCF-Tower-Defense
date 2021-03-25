@@ -31,9 +31,9 @@ public class MapSelection : MonoBehaviour
         SceneManager.LoadScene(sceneName: "CB1ClassroomScene");
     }
 
-    public void ToLibrary()
+    public void ToPub()
     {
-        SceneManager.LoadScene(sceneName: "LibraryScene");
+        SceneManager.LoadScene(sceneName: "Pub");
     }
 
     public void ToMainMenu()
