@@ -1,7 +1,12 @@
-﻿using System;
-public class NewClass1
+﻿using System.Collections.Generic;
+using UnityEngine;
+
+public class SurvivalSpawner : WaveSpawner
 {
-    public NewClass1()
+    private int waveNumber;
+
+    public SurvivalSpawner(GameObject[] enemies) : base(enemies)
     {
+        waveNumber = 1;
     }
 }
