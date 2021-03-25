@@ -35214,7 +35214,7 @@ MonoBehaviour:
     type: 3}
   meadePrefab: {fileID: 6758350541091441260, guid: c93f1ce7149184ba99b956de00c63a40,
     type: 3}
-  szumlanskiPrefab: {fileID: 6758350541091441260, guid: c93f1ce7149184ba99b956de00c63a40,
+  szumlanskiPrefab: {fileID: 6758350541091441260, guid: 59b15a203348d4e07abb8ff22911252b,
     type: 3}
   enemies: []
   spawnBool: 0

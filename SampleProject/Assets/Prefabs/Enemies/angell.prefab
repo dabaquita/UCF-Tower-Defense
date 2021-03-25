@@ -111,9 +111,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
-  moneyAwarded: 50
+  moneyAwarded: 25
+  speed: 15
+  damageDealt: 2
   pathCreator: {fileID: 0}
-  speed: 10
   endOfPathInstruction: 0
 --- !u!61 &5868916726615380180
 BoxCollider2D:
@@ -130,7 +131,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 2.36, y: 3.4199998, z: 2.6599998, w: 0}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 10, y: 10}
     newSize: {x: 10, y: 10}

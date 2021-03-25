@@ -22,23 +22,34 @@ public class GameManager : MonoBehaviour
     public Text waveText;
     public GameObject gameOverScreen;
     public List<Enemy> EnemyList = new List<Enemy>();
-    public bool[] moneyGiven = new bool[10];
+    public bool[] moneyGiven;
     public GameObject victoryScreen;
+    List<List<GameObject>> waves = new List<List<GameObject>>();
 
     void Start()
     {
         // possible solution for getting active scene depending on implementation of GameManager
         //currentMap = SceneManager.GetActiveScene().name;
         //Debug.Log(currentMap);
-        enemies = new GameObject[10];
-        waveNumber = 0;
+        waveNumber = 0; 
         enemiesAlive = 0;
         waveText.text = waveNumber.ToString();
+        moneyGiven = new bool[10];
         for (int i = 0; i < 10; i++)
         {
             moneyGiven[i] = false;
         }
-    }
+        waves.Add(new List<GameObject> { angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab });
+        waves.Add(new List<GameObject> { angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab });
+        waves.Add(new List<GameObject> { leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab });
+        waves.Add(new List<GameObject> { leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab});
+        waves.Add(new List<GameObject> { leineckerPrefab, leineckerPrefab, meadePrefab, leineckerPrefab, leineckerPrefab, meadePrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab });
+        waves.Add(new List<GameObject> { meadePrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, meadePrefab, guhaPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab});
+        waves.Add(new List<GameObject> { szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, guhaPrefab, guhaPrefab, guhaPrefab, meadePrefab, meadePrefab, meadePrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, guhaPrefab, guhaPrefab, guhaPrefab, meadePrefab, meadePrefab, meadePrefab });
+        waves.Add(new List<GameObject> { hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, meadePrefab});
+        waves.Add(new List<GameObject> { hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab });
+        waves.Add(new List<GameObject> { meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, meadePrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, leineckerPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, szumlanskiPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab, hollanderPrefab,  angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, angellPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, guhaPrefab, meadePrefab});
+        }
 
     // Update is called once per frame
     void Update()
@@ -110,17 +121,16 @@ public class GameManager : MonoBehaviour
         waveNumber++;
         // Alternatively we can have a maximum number of enemies on screen designated. And while the count
         // of enemies (EnemyList.Count) is less than maximum number of enemies, instantiate an enemy
-        for (i = 0; i <= waveNumber - 1; i++)
+        for (i = 0; i <= waves[waveNumber - 1].Count - 1; i++)
         {
-            // creates new hollander prefab and puts it at the start of the map
-            GameObject newEnemy = Instantiate(hollanderPrefab, pathCreator.path.GetPointAtTime(0.0f), Quaternion.identity);
-            newEnemy.transform.localScale = new Vector3(1, 1, 1);
-            enemies[i] = newEnemy;
+            GameObject newEnemy = Instantiate(waves[waveNumber - 1][i], pathCreator.path.GetPointAtTime(0.0f), Quaternion.identity);
+            if (i == 270)
+            {
+                Enemy speedyMeade = newEnemy.GetComponent<Enemy>();
+                speedyMeade.SetSpeed(90);
+            }
             enemiesAlive++;
-
-            // logs action and waits one second to spawn next enemy
-            Debug.Log("Hollander spawned.");
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(0.8f);
         }
     }
 

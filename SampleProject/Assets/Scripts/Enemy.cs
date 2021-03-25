@@ -109,4 +109,9 @@ public class Enemy : MonoBehaviour
     {
         health -= damage;
     }
+
+    public void SetSpeed(int newSpeed)
+    {
+        speed = newSpeed;
+    }
 }

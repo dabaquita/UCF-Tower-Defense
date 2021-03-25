@@ -1821,6 +1821,71 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 185756078}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &194069708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 194069710}
+  - component: {fileID: 194069709}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &194069709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194069708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb603c4b470355c40a1b2d4794390d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathCreator: {fileID: 0}
+  angellPrefab: {fileID: 6758350541091441260, guid: 84cc25e6215024e8197350534fab262e,
+    type: 3}
+  guhaPrefab: {fileID: 6758350541091441260, guid: 22a01654900cb4d4694e7c83e9b60e8f,
+    type: 3}
+  hollanderPrefab: {fileID: 6758350541091441260, guid: 05ad5982f9679984795ee05515123484,
+    type: 3}
+  leineckerPrefab: {fileID: 6758350541091441260, guid: fa5cef412d7e8450c827d954f8451fd7,
+    type: 3}
+  meadePrefab: {fileID: 6758350541091441260, guid: c93f1ce7149184ba99b956de00c63a40,
+    type: 3}
+  szumlanskiPrefab: {fileID: 6758350541091441260, guid: 59b15a203348d4e07abb8ff22911252b,
+    type: 3}
+  enemies: []
+  spawnBool: 0
+  waveNumber: 0
+  enemiesAlive: 0
+  waveText: {fileID: 0}
+  gameOverScreen: {fileID: 0}
+  EnemyList: []
+  moneyGiven: 00000000000000000000
+  victoryScreen: {fileID: 0}
+--- !u!4 &194069710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194069708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9799373, y: 0.5709437, z: 112.9375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &198567500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22769,61 +22834,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 583150319}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &595088386
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 595088388}
-  - component: {fileID: 595088387}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &595088387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595088386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb603c4b470355c40a1b2d4794390d4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pathCreator: {fileID: 1382452938}
-  hollanderPrefab: {fileID: 6758350541091441260, guid: 05ad5982f9679984795ee05515123484,
-    type: 3}
-  enemies: []
-  spawnBool: 0
-  waveNumber: 0
-  enemiesAlive: 0
-  waveText: {fileID: 798709834}
-  gameOverScreen: {fileID: 2874841288100210872, guid: 6d8d0e04573ade946a05bc0b54072fd1,
-    type: 3}
-  EnemyList: []
-  moneyGiven: 00000000000000000000
---- !u!4 &595088388
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595088386}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9799373, y: 0.5709437, z: 112.9375}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &604569780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23212,6 +23222,7 @@ MonoBehaviour:
   health: 50
   moneyAwarded: 50
   speed: 20
+  damageDealt: 1
   pathCreator: {fileID: 1382452938}
   endOfPathInstruction: 0
 --- !u!114 &657345424
@@ -23737,7 +23748,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 595088387}
+      - m_Target: {fileID: 0}
         m_MethodName: startSpawning
         m_Mode: 1
         m_Arguments:
@@ -27626,7 +27637,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382452936}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1688.801}
+  m_LocalPosition: {x: 0, y: 0, z: -1688.8009}
   m_LocalScale: {x: 218.84128, y: 200, z: 200}
   m_Children: []
   m_Father: {fileID: 243258026}

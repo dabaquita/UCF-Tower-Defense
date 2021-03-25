@@ -110,10 +110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da8a91aca3f830c4a9cb013f0163e5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
-  moneyAwarded: 50
+  health: 150
+  moneyAwarded: 100
+  speed: 25
+  damageDealt: 15
   pathCreator: {fileID: 0}
-  speed: 10
   endOfPathInstruction: 0
 --- !u!61 &5868916726615380180
 BoxCollider2D:
