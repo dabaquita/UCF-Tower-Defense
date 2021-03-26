@@ -245,7 +245,7 @@ Recleph Mere (KilluaxGonx):
 - Towers Sprites now fire projectiles at Enemy Sprites
 - Tower Sprites now damage Enemy Sprites
 
-# Sprint 7 Task Allocation
+# Sprint 8 Task Allocation
 
 Nicholas Nachowicz:
 
@@ -253,6 +253,7 @@ Nicholas Nachowicz:
 Denielle Abaquita:
 - Finalize all remaining map scenes
 - Game balancing with points and damage
+- Refactored Wave Spawning for both Adventure and Survival modes
 
 Kirk Matthews (Matthews242):
 - Tailored invidual waves for adventure mode
