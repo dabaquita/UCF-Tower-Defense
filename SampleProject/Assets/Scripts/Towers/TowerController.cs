@@ -60,19 +60,11 @@ public class TowerController : MonoBehaviour
 
     public void Attack()
     {
-        isAttacking = false;
         Projectile newProjectile = Instantiate(projectile) as Projectile;
         newProjectile.transform.localPosition = transform.localPosition;
-
-        if (targetEnemy == null)
-        {
-            Destroy(newProjectile);
-        }
-        else 
-        {
             // move projectile to enemy
             StartCoroutine(MoveProjectile(newProjectile));
-        }
+        
     }
 
     IEnumerator MoveProjectile(Projectile projectile)
@@ -86,11 +78,12 @@ public class TowerController : MonoBehaviour
             yield return null;
         }
 
-        if (projectile != null || targetEnemy == null)
+        /*if (projectile != null)
         {
             Debug.Log("Destroy projectile");
             Destroy(projectile);
         }
+        */
     }
 
     private float GetTargetDistance(Enemy thisEnemy)

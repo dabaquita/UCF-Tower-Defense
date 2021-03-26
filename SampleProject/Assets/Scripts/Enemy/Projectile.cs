@@ -12,6 +12,13 @@ public class Projectile : MonoBehaviour
     [SerializeField] int attackDamage;
     [SerializeField] projectileType pType;
 
+    private void Start()
+    {
+        Destroy(gameObject, 0.7f);
+    }
+    
+    
+
     public int AttackDamage
     {
         get
