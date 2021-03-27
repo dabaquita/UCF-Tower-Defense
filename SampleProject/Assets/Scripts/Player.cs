@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     private const int START_MONEY = 300;
 
     public static int level;
-    public int START_LEVEL = 0;
+    public int START_LEVEL = 21;
 
     public Text healthText;
     public Text moneyText;
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     {
         health = START_HEALTH;
         money = START_MONEY;
-        level = START_LEVEL;
+        level = AuthManager.currentUser == null ? START_LEVEL : AuthManager.currentUser.currentLevel;
         healthText.text = health.ToString();
         moneyText.text = money.ToString();
 
