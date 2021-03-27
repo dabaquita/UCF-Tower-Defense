@@ -9,12 +9,24 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScene.unity
     guid: e58d31f2d016b114f91181ba71ef600c
   - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: 44abe7af2dbd143a0a257cbfd3084b07
+  - enabled: 1
     path: Assets/Scenes/MapScenes/GreekRowScene.unity
     guid: dc7a1d050d4e93541bba6621c155f1ff
   - enabled: 1
     path: Assets/Scenes/MapScenes/MemoryMallScene.unity
     guid: 9fea3bfa7aa894cdcb792d5699fd0616
   - enabled: 1
-    path: Assets/Scenes/Login.unity
-    guid: 44abe7af2dbd143a0a257cbfd3084b07
+    path: Assets/Scenes/MapScenes/BounceHouse.unity
+    guid: 4adb13d9f09ca4f1db10842332ef7c45
+  - enabled: 1
+    path: Assets/Scenes/MapScenes/CB2.unity
+    guid: 9feb57039a251437b92b91a5be37964c
+  - enabled: 1
+    path: Assets/Scenes/MapScenes/Pub.unity
+    guid: 8e621ce56ddb841f485453bb6d4292a5
+  - enabled: 1
+    path: Assets/Scenes/MapScenes/StudentUnion.unity
+    guid: b8f9da3d28e57407d9986ea48cf395d8
   m_configObjects: {}
