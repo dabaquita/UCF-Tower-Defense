@@ -22,12 +22,15 @@ public class GameManager : MonoBehaviour
     public List<Enemy> EnemyList = new List<Enemy>();
     public List<GameObject> wave;
 
-    //public AdventureSpawner adventureSpawner;
+    public AdventureSpawner adventureSpawner;
     public SurvivalSpawner survivalSpawner;
 
     public bool isPaused = false;
 
-    public void togglePauseMode() {
+    private int GameMode;
+
+    public void togglePauseMode()
+    {
         isPaused = !isPaused;
         Time.timeScale = isPaused ? 0f : 1.0f;
     }
@@ -45,11 +48,19 @@ public class GameManager : MonoBehaviour
             moneyGiven[i] = false;
         }
 
-        //adventureSpawner = new AdventureSpawner(enemies);
-        survivalSpawner = new SurvivalSpawner(enemies);
+        GameMode = PlayerPrefs.GetInt("GameMode");
 
-        //waveNumber = adventureSpawner.getWaveNumber();
-        waveNumber = survivalSpawner.getWaveNumber();
+        if (GameMode == 0)
+        {
+            adventureSpawner = new AdventureSpawner(enemies);
+            waveNumber = adventureSpawner.getWaveNumber();
+        }
+        else if (GameMode == 1)
+        {
+            survivalSpawner = new SurvivalSpawner(enemies);
+            waveNumber = survivalSpawner.getWaveNumber();
+        }
+
         waveText.text = waveNumber.ToString();
     }
 
@@ -57,7 +68,8 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 
-        if (isPaused) { 
+        if (isPaused)
+        {
             return;
         }
 
@@ -90,8 +102,14 @@ public class GameManager : MonoBehaviour
             victoryScreen.gameObject.SetActive(true);
         }
 
-        //waveNumber = adventureSpawner.getWaveNumber();
-        waveNumber = survivalSpawner.getWaveNumber();
+        if (GameMode == 0)
+        {
+            waveNumber = adventureSpawner.getWaveNumber();
+        }
+        else
+        {
+            waveNumber = survivalSpawner.getWaveNumber();
+        }
         waveText.text = waveNumber.ToString();
     }
 
@@ -117,30 +135,57 @@ public class GameManager : MonoBehaviour
 
     public bool victory()
     {
-        // CHANGE BACK TO ADVENTURE
-        if (survivalSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0)
+        if (GameMode == 0)
         {
-            return true;
+            if (adventureSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0)
+            {
+                return true;
+            }
+        }
+        else if (GameMode == 1)
+        {
+            if (survivalSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0)
+            {
+                return true;
+            }
         }
         return false;
     }
 
     public IEnumerator spawner()
     {
-        //wave = adventureSpawner.GetNextWave();
-        wave = survivalSpawner.GetNextWave();
-
-        foreach (GameObject enemy in wave)
+        if (GameMode == 0)
         {
-            GameObject spawnedEnemy = Instantiate(enemy, pathCreator.path.GetPointAtTime(0.0f), Quaternion.identity);
+            wave = adventureSpawner.GetNextWave();
+            foreach (GameObject enemy in wave)
+            {
+                GameObject spawnedEnemy = Instantiate(enemy, pathCreator.path.GetPointAtTime(0.0f), Quaternion.identity);
 
-            // CHANGE BACK TO ADVENTURE
-            if (survivalSpawner.getWaveNumber() > 10 && spawnedEnemy.name.Equals("meade"))
-                spawnedEnemy.GetComponent<Enemy>().SetSpeed(90);
+                // CHANGE BACK TO ADVENTURE
+                if (adventureSpawner.getWaveNumber() > 10 && spawnedEnemy.name.Equals("meade"))
+                    spawnedEnemy.GetComponent<Enemy>().SetSpeed(90);
 
-            enemiesAlive++;
-            yield return new WaitForSeconds(0.8f);
+                enemiesAlive++;
+                yield return new WaitForSeconds(0.8f);
+            }
         }
+        else
+        {
+            wave = survivalSpawner.GetNextWave();
+            foreach (GameObject enemy in wave)
+            {
+                GameObject spawnedEnemy = Instantiate(enemy, pathCreator.path.GetPointAtTime(0.0f), Quaternion.identity);
+
+                // CHANGE BACK TO ADVENTURE
+                if (survivalSpawner.getWaveNumber() > 10 && spawnedEnemy.name.Equals("meade"))
+                    spawnedEnemy.GetComponent<Enemy>().SetSpeed(90);
+
+                enemiesAlive++;
+                yield return new WaitForSeconds(0.8f);
+            }
+        }
+
+
     }
 
     public void RegisterEnemy(Enemy enemy)
