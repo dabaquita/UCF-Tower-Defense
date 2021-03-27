@@ -17,18 +17,18 @@ public class MapSelection : MonoBehaviour
 
     public void ToStudentUnion()
     {
-        SceneManager.LoadScene(sceneName: "StudentUnionScene");
+        SceneManager.LoadScene(sceneName: "StudentUnion");
     }
 
     public void ToBounceHouse()
     {
         Debug.Log("BOUNCE BOUNCE");
-        SceneManager.LoadScene(sceneName: "BounceHouseScene");
+        SceneManager.LoadScene(sceneName: "BounceHouse");
     }
 
     public void ToCB1()
     {
-        SceneManager.LoadScene(sceneName: "CB1ClassroomScene");
+        SceneManager.LoadScene(sceneName: "CB2");
     }
 
     public void ToPub()
