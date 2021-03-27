@@ -21,6 +21,7 @@ public class SurvivalSpawner : WaveSpawner
         waveNumber = 0;
 
         enemyNames = new string[enemies.Length];
+        enemyDifficultyValues = new int[enemies.Length];
         for (int i = 0; i < enemies.Length; i++)
         {
             enemyNames[i] = enemies[i].name;
@@ -56,6 +57,6 @@ public class SurvivalSpawner : WaveSpawner
 
     private int GetRandomEnemyDifficultyValues()
     {
-        return (int)(rand.Next(20, 51) * (waveNumber * .15));
+        return (int)(rand.Next(5, 31) * (waveNumber * .51));
     }
 }
