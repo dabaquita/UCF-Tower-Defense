@@ -25,14 +25,11 @@ public class GameManager : MonoBehaviour
     //public AdventureSpawner adventureSpawner;
     public SurvivalSpawner survivalSpawner;
 
-    public void PauseGame() {
-        Time.timeScale = 0f;
-        
+    public bool isPaused = false;
 
-    }
-
-    public void ResumeGame() {
-        Time.timeScale = 1.0f;
+    public void togglePauseMode() {
+        isPaused = !isPaused;
+        Time.timeScale = isPaused ? 0f : 1.0f;
     }
 
     void Start()
@@ -59,6 +56,11 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (isPaused) { 
+            return;
+        }
+
         if (Player.getHealth() <= 0)
         {
             Debug.Log("Lives is 0. Game over.");
