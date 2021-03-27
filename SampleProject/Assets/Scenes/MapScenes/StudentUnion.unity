@@ -26123,7 +26123,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1994577608}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -30222,6 +30222,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dc4c4e6e455d4db4a90a75b21ecfbbd, type: 3}
+--- !u!1 &1994577608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7055306994660078618, guid: fe98d8d09491c4a9f832c6c7235594bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1687495186}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2033141942
 PrefabInstance:
   m_ObjectHideFlags: 0
