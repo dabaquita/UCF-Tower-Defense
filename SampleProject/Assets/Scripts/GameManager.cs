@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject gameOverScreen;
     public GameObject victoryScreen;
+    public GameObject pauseMenu;
 
     public int waveNumber;
     public int enemiesAlive;
@@ -33,6 +34,14 @@ public class GameManager : MonoBehaviour
     {
         isPaused = !isPaused;
         Time.timeScale = isPaused ? 0f : 1.0f;
+        if (isPaused)
+        {
+            pauseMenu.gameObject.SetActive(true);
+        }
+        else
+        {
+            pauseMenu.gameObject.SetActive(false);
+        }
     }
 
     void Start()

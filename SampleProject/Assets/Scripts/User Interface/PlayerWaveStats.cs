@@ -18,8 +18,8 @@ public class PlayerWaveStats : MonoBehaviour
         }
         else
         {
-            highestWave.text = "2";
-            currentLevel.text = "1";
+            highestWave.text = "0";
+            currentLevel.text = "0";
         }
     }
 
@@ -32,8 +32,8 @@ public class PlayerWaveStats : MonoBehaviour
         }
         else
         {
-            highestWave.text = "2";
-            currentLevel.text = "1";
+            highestWave.text = "0";
+            currentLevel.text = "0";
         }
     }
 }
