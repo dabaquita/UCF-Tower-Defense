@@ -28,7 +28,7 @@ public class SurvivalSpawner : WaveSpawner
         }
     }
 
-    private List<GameObject> GetNextWave()
+    public List<GameObject> GetNextWave()
     {
         List<GameObject> wave = new List<GameObject>();
         int waveDifficulty = GetRandomEnemyDifficultyValues();
@@ -40,6 +40,7 @@ public class SurvivalSpawner : WaveSpawner
             jindex += enemyDifficultyValues[toSpawn];
             wave = SpawnEnemy(toSpawnName, 1, wave);
         }
+        waveNumber++;
         return wave;
     }
 
