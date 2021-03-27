@@ -257,8 +257,9 @@ Denielle Abaquita:
 - Added background music to each map scene
 
 Kirk Matthews (Matthews242):
-- Tailored invidual waves for adventure mode
+- Tailored invidual waves for adventure mode and game balancing with Denielle
 - Made survival mode throw random waves at you until your inevitable death
+- Updated map selection
 
 Christopher Foreman:
 
