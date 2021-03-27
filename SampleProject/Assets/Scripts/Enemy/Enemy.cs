@@ -115,4 +115,9 @@ public class Enemy : MonoBehaviour
     {
         speed = newSpeed;
     }
+
+    public int GetDifficltyValue()
+    {
+        return difficultyValue;
+    }
 }
