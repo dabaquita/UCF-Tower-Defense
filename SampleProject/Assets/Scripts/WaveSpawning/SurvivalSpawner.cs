@@ -28,6 +28,11 @@ public class SurvivalSpawner : WaveSpawner
         }
     }
 
+    public int getWaveNumber()
+    {
+        return waveNumber;
+    }
+
     public List<GameObject> GetNextWave()
     {
         List<GameObject> wave = new List<GameObject>();
