@@ -22669,17 +22669,17 @@ PrefabInstance:
     - target: {fileID: 4178598058523681455, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4178598058523681455, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4178598058523681455, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: -35.442932
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4178598058523681458, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
@@ -22724,42 +22724,42 @@ PrefabInstance:
     - target: {fileID: 7055306994102430061, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7055306994102430061, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7055306994370823338, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7055306994370823338, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7055306994370823338, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7055306994370823338, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: -17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7055306994626045215, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7055306994626045215, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: -17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7055306994660078613, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
@@ -22874,32 +22874,32 @@ PrefabInstance:
     - target: {fileID: 7055306994660078618, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7055306994802267759, guid: fe98d8d09491c4a9f832c6c7235594bd,
+        type: 3}
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7055306994802267759, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7055306994802267759, guid: fe98d8d09491c4a9f832c6c7235594bd,
-        type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7055306994802267759, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.65954685
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7055306994831220813, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7055306994831220813, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8958104937511472655, guid: fe98d8d09491c4a9f832c6c7235594bd,
         type: 3}
