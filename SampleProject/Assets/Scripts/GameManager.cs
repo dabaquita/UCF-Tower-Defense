@@ -22,7 +22,8 @@ public class GameManager : MonoBehaviour
     public List<Enemy> EnemyList = new List<Enemy>();
     public List<GameObject> wave;
 
-    public AdventureSpawner adventureSpawner;
+    //public AdventureSpawner adventureSpawner;
+    public SurvivalSpawner survivalSpawner;
 
     void Start()
     {
@@ -37,9 +38,11 @@ public class GameManager : MonoBehaviour
             moneyGiven[i] = false;
         }
 
-        adventureSpawner = new AdventureSpawner(enemies);
+        //adventureSpawner = new AdventureSpawner(enemies);
+        survivalSpawner = new SurvivalSpawner(enemies);
 
-        waveNumber = adventureSpawner.getWaveNumber();
+        //waveNumber = adventureSpawner.getWaveNumber();
+        waveNumber = survivalSpawner.getWaveNumber();
         waveText.text = waveNumber.ToString();
     }
 
@@ -75,7 +78,8 @@ public class GameManager : MonoBehaviour
             victoryScreen.gameObject.SetActive(true);
         }
 
-        waveNumber = adventureSpawner.getWaveNumber();
+        //waveNumber = adventureSpawner.getWaveNumber();
+        waveNumber = survivalSpawner.getWaveNumber();
         waveText.text = waveNumber.ToString();
     }
 
@@ -101,7 +105,8 @@ public class GameManager : MonoBehaviour
 
     public bool victory()
     {
-        if (adventureSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0)
+        // CHANGE BACK TO ADVENTURE
+        if (survivalSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0)
         {
             return true;
         }
@@ -110,13 +115,15 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator spawner()
     {
-        wave = adventureSpawner.GetNextWave();
+        //wave = adventureSpawner.GetNextWave();
+        wave = survivalSpawner.GetNextWave();
 
         foreach (GameObject enemy in wave)
         {
             GameObject spawnedEnemy = Instantiate(enemy, pathCreator.path.GetPointAtTime(0.0f), Quaternion.identity);
 
-            if (adventureSpawner.getWaveNumber() > 10 && spawnedEnemy.name.Equals("meade"))
+            // CHANGE BACK TO ADVENTURE
+            if (survivalSpawner.getWaveNumber() > 10 && spawnedEnemy.name.Equals("meade"))
                 spawnedEnemy.GetComponent<Enemy>().SetSpeed(90);
 
             enemiesAlive++;
