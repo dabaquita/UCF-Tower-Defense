@@ -57,6 +57,14 @@ public class SurvivalSpawner : WaveSpawner
 
     private int GetRandomEnemyDifficultyValues()
     {
-        return (int)(rand.Next(5, 31) * (waveNumber * .51));
+        if (waveNumber == 0)
+        {
+            return (int)(rand.Next(6, 21));
+        }
+        else
+        {
+            return (int)(rand.Next(6, 21) * System.Math.Ceiling((waveNumber * .50)));
+        }
+
     }
 }
