@@ -218,14 +218,4 @@ public class GameManager : MonoBehaviour
             moneyGiven[waveNumber - 1] = true;
         }
     }
-
-    public void chooseAdventure()
-    {
-        PlayerPrefs.SetInt("GameMode", 0);
-    }
-
-    public void chooseSurvival()
-    {
-        PlayerPrefs.SetInt("GameMode", 1);
-    }
 }
