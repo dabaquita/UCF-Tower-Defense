@@ -15,6 +15,9 @@ using Firebase.Functions;
 public class User
 {
     public string username;
+    public int currentLevel;
+    public int highestWave;
+    public Dictionary<string, bool> unlockedMaps;
 
     public User(string name)
     {

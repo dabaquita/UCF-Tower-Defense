@@ -40,4 +40,15 @@ public class CloudFunctions : MonoBehaviour
             return "Done";
         });
     }
+
+    public static Task SyncUser()
+    {
+        var function = CloudFunctions.functions.GetHttpsCallable("unlockMap");
+        return function.CallAsync().ContinueWith((task) =>
+        {
+            Debug.Log(task.Result);
+            return;
+        });
+    }
+
 }
