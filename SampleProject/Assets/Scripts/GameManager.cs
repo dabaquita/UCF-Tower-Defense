@@ -25,6 +25,16 @@ public class GameManager : MonoBehaviour
     //public AdventureSpawner adventureSpawner;
     public SurvivalSpawner survivalSpawner;
 
+    public void PauseGame() {
+        Time.timeScale = 0f;
+        
+
+    }
+
+    public void ResumeGame() {
+        Time.timeScale = 1.0f;
+    }
+
     void Start()
     {
         // possible solution for getting active scene depending on implementation of GameManager
