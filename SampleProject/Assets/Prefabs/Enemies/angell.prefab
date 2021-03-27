@@ -114,6 +114,7 @@ MonoBehaviour:
   moneyAwarded: 25
   speed: 15
   damageDealt: 2
+  difficultyValue: 1
   pathCreator: {fileID: 0}
   endOfPathInstruction: 0
 --- !u!61 &5868916726615380180

@@ -4,7 +4,6 @@ using UnityEngine;
 public class SurvivalSpawner : WaveSpawner
 {
     private int waveNumber;
-    private int waveDifficulty;
     private string[] enemyNames;
 
     /*
@@ -18,7 +17,6 @@ public class SurvivalSpawner : WaveSpawner
     public SurvivalSpawner(GameObject[] enemies) : base(enemies)
     {
         waveNumber = 0;
-        waveDifficulty = 0;
 
         enemyNames = new string[enemies.Length];
         for (int i = 0; i < enemies.Length; i++)
@@ -36,8 +34,8 @@ public class SurvivalSpawner : WaveSpawner
         return wave;
     }
 
-    private int GetNumEnemiesPerwave()
+    private int GetNumEnemiesPerWave()
     {
-        return (int)(0.15 * (waveNumber + 1)) * (20 * (waveDifficulty + 1));
+        return (int)(0.15 * (waveNumber + 1)) * (20 * (waveNumber + 1));
     }
 }
