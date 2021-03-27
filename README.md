@@ -254,6 +254,7 @@ Denielle Abaquita:
 - Finalize all remaining map scenes
 - Game balancing with points and damage
 - Refactored Wave Spawning for both Adventure and Survival modes
+- Added background music to each map scene
 
 Kirk Matthews (Matthews242):
 - Tailored invidual waves for adventure mode
