@@ -246,6 +246,7 @@ public class GameManager : MonoBehaviour
     public void ToMainMenuFromPause()
     {
         Time.timeScale = 1.0f;
+        CloudFunctions.addXP(xp);
         SceneManager.LoadScene(sceneName: "MenuScene");
     }
 }
