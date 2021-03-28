@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     public bool isPaused = false;
 
     private int GameMode;
+    private int xp;
+    private User user;
 
     public void togglePauseMode()
     {
@@ -72,6 +74,8 @@ public class GameManager : MonoBehaviour
         }
 
         waveText.text = waveNumber.ToString();
+        user = AuthManager.currentUser;
+        xp = 0;
     }
 
     // Update is called once per frame
@@ -97,13 +101,15 @@ public class GameManager : MonoBehaviour
                 StartCoroutine(spawner());
                 spawnBool = false;
             }
+
             spawnBool = false;
         }
 
-        // awards money once after wave completion
+        // awards money and experience once after wave completion
         if (waveNumber >= 1 && enemiesAlive == 0)
         {
             giveMoney();
+            giveXP();
         }
 
         if (victory())
@@ -120,6 +126,7 @@ public class GameManager : MonoBehaviour
         {
             waveNumber = survivalSpawner.getWaveNumber();
         }
+
         waveText.text = waveNumber.ToString();
     }
 
@@ -140,7 +147,6 @@ public class GameManager : MonoBehaviour
 
     public void startSpawning()
     {
-        CloudFunctions.SetHighestWave(5);
         spawnBool = true; // triggered by play button
     }
 
@@ -150,17 +156,28 @@ public class GameManager : MonoBehaviour
         {
             if (adventureSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0)
             {
+                CloudFunctions.addXP(1000 + xp);
                 return true;
             }
         }
         else if (GameMode == 1)
         {
-            if (survivalSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0)
+            if (survivalSpawner.getWaveNumber() >= 100 && enemiesAlive <= 0 && Player.getHealth() > 0)
             {
+                CloudFunctions.addXP(1000 + xp);
                 return true;
             }
         }
         return false;
+    }
+
+    private void giveXP()
+    {
+        if (user == null)
+            return;
+
+
+        xp += 100;
     }
 
     public IEnumerator spawner()
@@ -209,6 +226,7 @@ public class GameManager : MonoBehaviour
     {
         EnemyList.Remove(enemy);
         enemy.DestroyEnemy();
+        xp += 5;
     }
 
     public void DestroyEnemies()
