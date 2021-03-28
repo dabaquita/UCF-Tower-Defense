@@ -7436,8 +7436,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+<<<<<<< HEAD
       - m_Target: {fileID: 2111670503}
         m_MethodName: Play
+=======
+      - m_Target: {fileID: 396936291}
+        m_MethodName: doExitGame
+>>>>>>> fc2610c3bd2912a4560a4d2d5eb21267d1c4354f
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
