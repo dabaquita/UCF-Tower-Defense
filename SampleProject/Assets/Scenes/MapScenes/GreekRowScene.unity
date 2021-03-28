@@ -5059,7 +5059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7737e730a479e540b1c6cbca9daadbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  START_LEVEL: 99
+  START_LEVEL: 0
   healthText: {fileID: 1904911223}
   moneyText: {fileID: 1881672200}
   levelBlockSpinScooter: {fileID: 1821571811}
