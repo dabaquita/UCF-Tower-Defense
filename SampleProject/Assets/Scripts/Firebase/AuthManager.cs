@@ -48,6 +48,12 @@ public class AuthManager : MonoBehaviour
 
     public static User currentUser = null;
 
+
+    public static void signout() {
+        FirebaseAuth.DefaultInstance.SignOut();
+        AuthManager.currentUser = null;
+    }
+
     void Update()
     {
 

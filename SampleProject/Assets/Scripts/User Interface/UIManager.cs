@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+using Firebase.Auth;
+
 public class UIManager : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -14,6 +16,9 @@ public class UIManager : MonoBehaviour
     public void doExitGame()
     {
         Debug.Log("Exiting the game");
+
+        AuthManager.signout();
+
         Application.Quit();
     }
 
