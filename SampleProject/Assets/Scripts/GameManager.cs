@@ -91,7 +91,6 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Lives is 0. Game over.");
             gameOverScreen.gameObject.SetActive(true);
-            //SceneManager.LoadScene(sceneName: "MenuScene");
         }
 
         if (spawnBool)
@@ -109,7 +108,6 @@ public class GameManager : MonoBehaviour
         if (waveNumber >= 1 && enemiesAlive == 0)
         {
             giveMoney();
-            giveXP();
         }
 
         if (victory())
@@ -188,8 +186,6 @@ public class GameManager : MonoBehaviour
             foreach (GameObject enemy in wave)
             {
                 GameObject spawnedEnemy = Instantiate(enemy, pathCreator.path.GetPointAtTime(0.0f), Quaternion.identity);
-
-                // CHANGE BACK TO ADVENTURE
                 if (adventureSpawner.getWaveNumber() > 10 && spawnedEnemy.name.Equals("meade"))
                     spawnedEnemy.GetComponent<Enemy>().SetSpeed(90);
 
@@ -203,8 +199,6 @@ public class GameManager : MonoBehaviour
             foreach (GameObject enemy in wave)
             {
                 GameObject spawnedEnemy = Instantiate(enemy, pathCreator.path.GetPointAtTime(0.0f), Quaternion.identity);
-
-                // CHANGE BACK TO ADVENTURE
                 if (survivalSpawner.getWaveNumber() > 10 && spawnedEnemy.name.Equals("meade"))
                     spawnedEnemy.GetComponent<Enemy>().SetSpeed(90);
 
@@ -245,6 +239,7 @@ public class GameManager : MonoBehaviour
         {
             Player.setMoney(Player.getMoney() + 100);
             moneyGiven[waveNumber - 1] = true;
+            giveXP();
         }
     }
 
