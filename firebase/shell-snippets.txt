@@ -1,0 +1,30 @@
+
+
+
+Deployment:
+
+cd to root of repo
+
+then use:
+
+firebase deploy --only functions
+
+
+
+
+Run this to start the firebase shell:
+
+firebase functions:shell
+
+
+
+Run these for testing functions in the firebase functions shell.
+
+addExperience({ 'xp' : 1000 })
+
+setHighestWave({ 'highestWave' : 4 })
+
+unlockMap({ 'mapName' : 'StudentUnion' })
+
+getUserData({})
+

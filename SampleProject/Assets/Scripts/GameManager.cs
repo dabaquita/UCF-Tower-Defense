@@ -130,6 +130,7 @@ public class GameManager : MonoBehaviour
 
     public void startSpawning()
     {
+        CloudFunctions.SetHighestWave(5);
         spawnBool = true; // triggered by play button
     }
 

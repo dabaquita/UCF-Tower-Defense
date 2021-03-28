@@ -12,20 +12,6 @@ using Firebase.Auth;
 using Firebase.Functions;
 
 
-public class User
-{
-    public string username;
-    public int currentLevel;
-    public int highestWave;
-    public Dictionary<string, bool> unlockedMaps;
-
-    public User(string name)
-    {
-        username = name;
-    }
-}
-
-
 public class AuthManager : MonoBehaviour
 {
 
@@ -62,23 +48,21 @@ public class AuthManager : MonoBehaviour
 
     public static User currentUser = null;
 
-    public bool updateUI = false;
-
     void Update()
     {
-        if (updateUI)
-        {
-            updateUI = false;
-            if (usernameLabel != null && loginButton != null)
-            {
+
+        if (
+            usernameLabel != null && 
+            loginButton != null && 
+            AuthManager.currentUser != null
+            ) {
 
                 //If the user isn't signed in show the login button otherwise show the username
                 bool isSignedIn = AuthManager.currentUser != null;
                 usernameLabel.enabled = isSignedIn;
-                usernameLabel.text = $"Welcome back, {AuthManager.currentUser.username}!";
+                usernameLabel.text = $"Welcome back, {AuthManager.currentUser.getUsername()}!";
                 loginButton.SetActive(!isSignedIn);
             }
-        }
     }
 
     void Awake()
@@ -113,8 +97,9 @@ public class AuthManager : MonoBehaviour
                             //Setup user if already signed in
                             if (auth.CurrentUser != null)
                             {
-                                AuthManager.currentUser = new User(auth.CurrentUser.DisplayName);
-                                updateUI = true;
+                                CloudFunctions.SyncUser();
+                                // yield return new WaitUntil(predicate: () => syncTask.IsCompleted);
+                                // updateUI = true;
                             }
 
                             // CloudFunctions.SetHighestWave(100);

@@ -4216,7 +4216,6 @@ MonoBehaviour:
   errorSignupText: {fileID: 0}
   loginButton: {fileID: 1941777629}
   usernameLabel: {fileID: 84839301}
-  updateUI: 0
 --- !u!4 &1107918847
 Transform:
   m_ObjectHideFlags: 0
