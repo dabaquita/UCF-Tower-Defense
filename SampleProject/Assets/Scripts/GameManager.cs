@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public bool spawnBool = false;
     public Text waveText;
     public bool[] moneyGiven;
+    public bool isSpawning = false;
 
     public GameObject gameOverScreen;
     public GameObject victoryScreen;
@@ -148,7 +149,7 @@ public class GameManager : MonoBehaviour
     {
         if (GameMode == 0)
         {
-            if (adventureSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0)
+            if (adventureSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0 && (!isSpawning))
             {
                 if (user.getHighestWave() < waveNumber)
                     CloudFunctions.SetHighestWave(waveNumber);
@@ -159,7 +160,7 @@ public class GameManager : MonoBehaviour
         }
         else if (GameMode == 1)
         {
-            if (survivalSpawner.getWaveNumber() >= 100 && enemiesAlive <= 0 && Player.getHealth() > 0)
+            if (survivalSpawner.getWaveNumber() >= 100 && enemiesAlive <= 0 && Player.getHealth() > 0 && (!isSpawning))
             {
                 if (user.getHighestWave() < waveNumber)
                     CloudFunctions.SetHighestWave(waveNumber);
@@ -184,6 +185,7 @@ public class GameManager : MonoBehaviour
     {
         if (GameMode == 0)
         {
+            isSpawning = true;
             wave = adventureSpawner.GetNextWave();
             foreach (GameObject enemy in wave)
             {
@@ -193,10 +195,12 @@ public class GameManager : MonoBehaviour
 
                 enemiesAlive++;
                 yield return new WaitForSeconds(0.8f);
+                isSpawning = false;
             }
         }
         else
         {
+            isSpawning = true;
             wave = survivalSpawner.GetNextWave();
             foreach (GameObject enemy in wave)
             {
@@ -206,6 +210,7 @@ public class GameManager : MonoBehaviour
 
                 enemiesAlive++;
                 yield return new WaitForSeconds(0.8f);
+                isSpawning = false;
             }
         }
 
