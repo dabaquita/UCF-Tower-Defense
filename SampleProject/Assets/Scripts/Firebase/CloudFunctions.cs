@@ -124,13 +124,13 @@ public class CloudFunctions : MonoBehaviour
         });
     }
 
-    public static Task<string> SetUserLevel(int level)
+    public static Task<string> addXP(int xp)
     {
         // Create the arguments to the callable function.
         var data = new Dictionary<string, object>();
-        data["level"] = level;
+        data["xp"] = xp;
         // Call the function and extract the operation from the result.
-        var function = CloudFunctions.functions.GetHttpsCallable("setUserLevel");
+        var function = CloudFunctions.functions.GetHttpsCallable("getUserData");
         return function.CallAsync(data).ContinueWith((task) =>
         {
             updateUser((Task<HttpsCallableResult>)task);
