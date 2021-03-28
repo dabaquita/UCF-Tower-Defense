@@ -37792,7 +37792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922209798}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -41.023643, y: -68.55122, z: -818.8985}
+  m_LocalPosition: {x: -41.023643, y: -68.55122, z: -818.87335}
   m_LocalScale: {x: 218.84128, y: 200, z: 200}
   m_Children: []
   m_Father: {fileID: 379129094}
@@ -40558,7 +40558,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 28343392}
+      objectReference: {fileID: 1663233284}
+    - target: {fileID: 8754254888279568971, guid: b348e9adb15356b4cafa33b6902ba07b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToMainMenuFromPause
+      objectReference: {fileID: 0}
     - target: {fileID: 8754254888465437810, guid: b348e9adb15356b4cafa33b6902ba07b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -40642,12 +40647,12 @@ PrefabInstance:
     - target: {fileID: 8754254888465437810, guid: b348e9adb15356b4cafa33b6902ba07b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8754254888465437810, guid: b348e9adb15356b4cafa33b6902ba07b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00012207031
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8754254888465437810, guid: b348e9adb15356b4cafa33b6902ba07b,
         type: 3}
@@ -40668,6 +40673,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8754254888465437815, guid: b348e9adb15356b4cafa33b6902ba07b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b348e9adb15356b4cafa33b6902ba07b, type: 3}

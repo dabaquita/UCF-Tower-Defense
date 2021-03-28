@@ -227,4 +227,10 @@ public class GameManager : MonoBehaviour
             moneyGiven[waveNumber - 1] = true;
         }
     }
+
+    public void ToMainMenuFromPause()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene(sceneName: "MenuScene");
+    }
 }
