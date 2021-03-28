@@ -154,6 +154,9 @@ public class GameManager : MonoBehaviour
         {
             if (adventureSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0)
             {
+                if (user.getHighestWave() > waveNumber)
+                    CloudFunctions.SetHighestWave(waveNumber);
+
                 CloudFunctions.addXP(1000 + xp);
                 return true;
             }
@@ -162,6 +165,9 @@ public class GameManager : MonoBehaviour
         {
             if (survivalSpawner.getWaveNumber() >= 100 && enemiesAlive <= 0 && Player.getHealth() > 0)
             {
+                if (user.getHighestWave() > waveNumber)
+                    CloudFunctions.SetHighestWave(waveNumber);
+
                 CloudFunctions.addXP(1000 + xp);
                 return true;
             }
