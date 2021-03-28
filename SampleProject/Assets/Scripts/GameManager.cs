@@ -81,7 +81,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (isPaused)
         {
             return;
@@ -252,7 +251,12 @@ public class GameManager : MonoBehaviour
     public void ToMainMenuFromPause()
     {
         Time.timeScale = 1.0f;
+
+        if (user.getHighestWave() > waveNumber)
+            CloudFunctions.SetHighestWave(waveNumber);
+
         CloudFunctions.addXP(xp);
+
         SceneManager.LoadScene(sceneName: "MenuScene");
     }
 }
