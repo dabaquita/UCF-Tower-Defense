@@ -2452,11 +2452,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1231722772}
+      objectReference: {fileID: 194069709}
     - target: {fileID: 8360261691328288149, guid: e53481ed3135c1141be12ec782790b8f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToMainMenu
+      value: ToMainMenuFromGameOver
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e53481ed3135c1141be12ec782790b8f, type: 3}
@@ -26630,11 +26630,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1231722772}
+      objectReference: {fileID: 194069709}
     - target: {fileID: 6957996487383375744, guid: b1946308a93ef384d8a75af98df17a10,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToMainMenu
+      value: ToMainMenuFromGameOver
       objectReference: {fileID: 0}
     - target: {fileID: 6957996487383375744, guid: b1946308a93ef384d8a75af98df17a10,
         type: 3}
@@ -26850,7 +26850,7 @@ PrefabInstance:
     - target: {fileID: 8754254888465437810, guid: b348e9adb15356b4cafa33b6902ba07b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000061035156
+      value: -0.00012207031
       objectReference: {fileID: 0}
     - target: {fileID: 8754254888465437810, guid: b348e9adb15356b4cafa33b6902ba07b,
         type: 3}

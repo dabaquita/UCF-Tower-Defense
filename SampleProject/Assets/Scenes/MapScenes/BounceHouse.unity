@@ -9294,8 +9294,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1790483715}
-        m_MethodName: ToMainMenu
+      - m_Target: {fileID: 54654823}
+        m_MethodName: ToMainMenuFromGameOver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9790,8 +9790,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1790483715}
-        m_MethodName: ToMainMenu
+      - m_Target: {fileID: 54654823}
+        m_MethodName: ToMainMenuFromGameOver
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
