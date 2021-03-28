@@ -11,4 +11,10 @@ public class UIManager : MonoBehaviour
         //SceneManager.LoadScene("FIRST_SCENE_OF_THE_GAME");
     }
 
+    public void doExitGame()
+    {
+        Debug.Log("Exiting the game");
+        Application.Quit();
+    }
+
 }

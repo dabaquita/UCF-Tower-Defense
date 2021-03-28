@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject gameOverScreen;
     public GameObject victoryScreen;
+    public GameObject pauseMenu;
 
     public int waveNumber;
     public int enemiesAlive;
@@ -33,6 +34,14 @@ public class GameManager : MonoBehaviour
     {
         isPaused = !isPaused;
         Time.timeScale = isPaused ? 0f : 1.0f;
+        if (isPaused)
+        {
+            pauseMenu.gameObject.SetActive(true);
+        }
+        else
+        {
+            pauseMenu.gameObject.SetActive(false);
+        }
     }
 
     void Start()
@@ -40,6 +49,7 @@ public class GameManager : MonoBehaviour
         // possible solution for getting active scene depending on implementation of GameManager
         //currentMap = SceneManager.GetActiveScene().name;
         //Debug.Log(currentMap);
+        Application.targetFrameRate = 60;
         enemiesAlive = 0;
 
         moneyGiven = new bool[10];
@@ -218,5 +228,11 @@ public class GameManager : MonoBehaviour
             Player.setMoney(Player.getMoney() + 100);
             moneyGiven[waveNumber - 1] = true;
         }
+    }
+
+    public void ToMainMenuFromPause()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene(sceneName: "MenuScene");
     }
 }
