@@ -260,5 +260,6 @@ public class GameManager : MonoBehaviour
     public void ToMainMenuFromGameOver()
     {
         CloudFunctions.addXP(1000 + xp);
+        SceneManager.LoadScene(sceneName: "MenuScene");
     }
 }
