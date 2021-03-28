@@ -130,7 +130,7 @@ public class CloudFunctions : MonoBehaviour
         var data = new Dictionary<string, object>();
         data["xp"] = xp;
         // Call the function and extract the operation from the result.
-        var function = CloudFunctions.functions.GetHttpsCallable("getUserData");
+        var function = CloudFunctions.functions.GetHttpsCallable("addExperience");
         return function.CallAsync(data).ContinueWith((task) =>
         {
             updateUser((Task<HttpsCallableResult>)task);
