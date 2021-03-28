@@ -37890,7 +37890,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 1
+    vertexPathUpToDate: 0
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 0
@@ -40176,7 +40176,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 28343392}
+      objectReference: {fileID: 1663233284}
+    - target: {fileID: 6957996487383375744, guid: b1946308a93ef384d8a75af98df17a10,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToMainMenuFromGameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 6957996487383375744, guid: b1946308a93ef384d8a75af98df17a10,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1946308a93ef384d8a75af98df17a10, type: 3}
 --- !u!1001 &7055306994696976749
@@ -40539,7 +40549,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 28343392}
+      objectReference: {fileID: 1663233284}
+    - target: {fileID: 8360261691328288149, guid: e53481ed3135c1141be12ec782790b8f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToMainMenuFromGameOver
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e53481ed3135c1141be12ec782790b8f, type: 3}
 --- !u!1001 &8754254887779055502

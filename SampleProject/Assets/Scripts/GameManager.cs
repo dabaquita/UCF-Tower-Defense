@@ -48,9 +48,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        // possible solution for getting active scene depending on implementation of GameManager
-        //currentMap = SceneManager.GetActiveScene().name;
-        //Debug.Log(currentMap);
         Application.targetFrameRate = 60;
         enemiesAlive = 0;
 
@@ -154,7 +151,6 @@ public class GameManager : MonoBehaviour
         {
             if (adventureSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0)
             {
-                CloudFunctions.addXP(1000 + xp);
                 return true;
             }
         }
@@ -162,7 +158,6 @@ public class GameManager : MonoBehaviour
         {
             if (survivalSpawner.getWaveNumber() >= 100 && enemiesAlive <= 0 && Player.getHealth() > 0)
             {
-                CloudFunctions.addXP(1000 + xp);
                 return true;
             }
         }
@@ -248,5 +243,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1.0f;
         CloudFunctions.addXP(xp);
         SceneManager.LoadScene(sceneName: "MenuScene");
+    }
+
+    public void ToMainMenuFromGameOver()
+    {
+        CloudFunctions.addXP(1000 + xp);
     }
 }
