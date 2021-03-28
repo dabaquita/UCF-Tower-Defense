@@ -5798,7 +5798,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CB1 Classroom
+  m_Text: CB2 Classroom
 --- !u!222 &1443492347
 CanvasRenderer:
   m_ObjectHideFlags: 0
