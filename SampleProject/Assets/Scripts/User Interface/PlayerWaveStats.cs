@@ -8,27 +8,12 @@ public class PlayerWaveStats : MonoBehaviour
     public Text highestWave;
     public Text currentLevel;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        if (AuthManager.currentUser != null)
-        {
-            highestWave.text = AuthManager.currentUser.highestWave.ToString();
-            currentLevel.text = AuthManager.currentUser.currentLevel.ToString();
-        }
-        else
-        {
-            highestWave.text = "0";
-            currentLevel.text = "0";
-        }
-    }
-
     void Update()
     {
         if (AuthManager.currentUser != null)
         {
-            highestWave.text = AuthManager.currentUser.highestWave.ToString();
-            currentLevel.text = AuthManager.currentUser.currentLevel.ToString();
+            highestWave.text = AuthManager.currentUser.getHighestWave().ToString();
+            currentLevel.text = AuthManager.currentUser.getCurrentLevel().ToString();
         }
         else
         {

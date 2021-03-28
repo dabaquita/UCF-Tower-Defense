@@ -30,7 +30,6 @@ public class Player : MonoBehaviour
     {
         health = START_HEALTH;
         money = START_MONEY;
-        level = AuthManager.currentUser == null ? START_LEVEL : AuthManager.currentUser.currentLevel;
         healthText.text = health.ToString();
         moneyText.text = money.ToString();
 
@@ -67,6 +66,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        level = AuthManager.currentUser == null ? START_LEVEL : AuthManager.currentUser.getCurrentLevel();
         healthText.text = health.ToString();
         moneyText.text = money.ToString();
     }
