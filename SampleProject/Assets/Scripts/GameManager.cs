@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
         // possible solution for getting active scene depending on implementation of GameManager
         //currentMap = SceneManager.GetActiveScene().name;
         //Debug.Log(currentMap);
+        Application.targetFrameRate = 60;
         enemiesAlive = 0;
 
         moneyGiven = new bool[10];
