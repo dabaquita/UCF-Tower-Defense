@@ -44,4 +44,9 @@ public class MapSelection : MonoBehaviour
     public void ToLogin() {
         SceneManager.LoadScene(sceneName: "Login");
     }
+
+    public void ToTutorial()
+    {
+        Application.OpenURL("https://youtu.be/I624irNe7O4");
+    }
 }
