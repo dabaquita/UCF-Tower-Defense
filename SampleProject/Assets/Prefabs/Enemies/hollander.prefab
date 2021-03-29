@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 35
-  moneyAwarded: -25
+  moneyAwarded: -5
   speed: 25
   damageDealt: -1
   difficultyValue: 4

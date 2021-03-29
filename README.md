@@ -248,20 +248,30 @@ Recleph Mere (KilluaxGonx):
 # Sprint 8 Task Allocation
 
 Nicholas Nachowicz:
-
+- U032
+- Game balancing with points and damage
+- Fixed various game bugs with towers and maps
+- Created unique tower projectiles
 
 Denielle Abaquita:
+- U017, U011, U026, U016, U013
 - Finalize all remaining map scenes
 - Game balancing with points and damage
 - Refactored Wave Spawning for both Adventure and Survival modes
 - Added background music to each map scene
 
 Kirk Matthews (Matthews242):
+- U013, U027, U016, U026, U011
 - Tailored invidual waves for adventure mode and game balancing with Denielle
 - Made survival mode throw random waves at you until your inevitable death
 - Updated map selection
+- Worked on victory conditions and related algorithms
 
 Christopher Foreman:
-
+- U014, U015
+- Created User model syncing client with database
+- Created cloud function setHighestWave
+- Created cloud function addXP
+- Created cloud function unlockLevel
 
 Recleph Mere (KilluaxGonx):

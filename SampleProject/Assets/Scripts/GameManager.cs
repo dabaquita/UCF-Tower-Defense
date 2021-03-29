@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public bool spawnBool = false;
     public Text waveText;
     public bool[] moneyGiven;
+    public bool isSpawning = false;
 
     public GameObject gameOverScreen;
     public GameObject victoryScreen;
@@ -48,9 +49,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        // possible solution for getting active scene depending on implementation of GameManager
-        //currentMap = SceneManager.GetActiveScene().name;
-        //Debug.Log(currentMap);
         Application.targetFrameRate = 60;
         enemiesAlive = 0;
 
@@ -81,7 +79,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (isPaused)
         {
             return;
@@ -152,17 +149,25 @@ public class GameManager : MonoBehaviour
     {
         if (GameMode == 0)
         {
-            if (adventureSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0)
+            if (adventureSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0 && (!isSpawning))
             {
-                CloudFunctions.addXP(1000 + xp);
+                if (user != null)
+                {
+                    if (user.getHighestWave() < waveNumber)
+                        CloudFunctions.SetHighestWave(waveNumber);
+                }
                 return true;
             }
         }
         else if (GameMode == 1)
         {
-            if (survivalSpawner.getWaveNumber() >= 100 && enemiesAlive <= 0 && Player.getHealth() > 0)
+            if (survivalSpawner.getWaveNumber() >= 100 && enemiesAlive <= 0 && Player.getHealth() > 0 && (!isSpawning))
             {
-                CloudFunctions.addXP(1000 + xp);
+                if (user != null)
+                {
+                    if (user.getHighestWave() < waveNumber)
+                        CloudFunctions.SetHighestWave(waveNumber);
+                }
                 return true;
             }
         }
@@ -182,6 +187,7 @@ public class GameManager : MonoBehaviour
     {
         if (GameMode == 0)
         {
+            isSpawning = true;
             wave = adventureSpawner.GetNextWave();
             foreach (GameObject enemy in wave)
             {
@@ -192,9 +198,11 @@ public class GameManager : MonoBehaviour
                 enemiesAlive++;
                 yield return new WaitForSeconds(0.8f);
             }
+            isSpawning = false;
         }
         else
         {
+            isSpawning = true;
             wave = survivalSpawner.GetNextWave();
             foreach (GameObject enemy in wave)
             {
@@ -205,6 +213,7 @@ public class GameManager : MonoBehaviour
                 enemiesAlive++;
                 yield return new WaitForSeconds(0.8f);
             }
+            isSpawning = false;
         }
 
 
@@ -246,6 +255,31 @@ public class GameManager : MonoBehaviour
     public void ToMainMenuFromPause()
     {
         Time.timeScale = 1.0f;
+        if (user != null)
+        {
+            if (user.getHighestWave() < waveNumber)
+                CloudFunctions.SetHighestWave(waveNumber);
+
+            if (victory())
+            {
+                xp += 1000;
+            }
+            CloudFunctions.addXP(xp);
+        }
+
+        SceneManager.LoadScene(sceneName: "MenuScene");
+    }
+
+    public void ToMainMenuFromGameOver()
+    {
+        if (user != null)
+        {
+            if (victory())
+            {
+                xp += 1000;
+            }
+            CloudFunctions.addXP(1000 + xp);
+        }
         SceneManager.LoadScene(sceneName: "MenuScene");
     }
 }
