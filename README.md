@@ -34,7 +34,7 @@ UCF Tower Defense is a game where UCF students battle to save their grades again
 
 [Product Demonstration for Sprint 7](https://www.youtube.com/watch?v=Fk5kM6GPYD4)
 
-[Temporary Repository for Login Bug](https://github.com/ChrisForeman/UCF-TD-Login)
+[Product Demonstration for Sprint 8](https://youtu.be/koiYy_dSuFc)
 
 # Members
   Nicholas Nachowicz
