@@ -151,10 +151,13 @@ public class GameManager : MonoBehaviour
         {
             if (adventureSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0 && (!isSpawning))
             {
-                if (user.getHighestWave() < waveNumber)
-                    CloudFunctions.SetHighestWave(waveNumber);
+                if (user != null)
+                {
+                    if (user.getHighestWave() < waveNumber)
+                        CloudFunctions.SetHighestWave(waveNumber);
 
-                CloudFunctions.addXP(1000 + xp);
+                    CloudFunctions.addXP(1000 + xp);
+                }
                 return true;
             }
         }
@@ -162,10 +165,13 @@ public class GameManager : MonoBehaviour
         {
             if (survivalSpawner.getWaveNumber() >= 100 && enemiesAlive <= 0 && Player.getHealth() > 0 && (!isSpawning))
             {
-                if (user.getHighestWave() < waveNumber)
-                    CloudFunctions.SetHighestWave(waveNumber);
+                if (user != null)
+                {
+                    if (user.getHighestWave() < waveNumber)
+                        CloudFunctions.SetHighestWave(waveNumber);
 
-                CloudFunctions.addXP(1000 + xp);
+                    CloudFunctions.addXP(1000 + xp);
+                }
                 return true;
             }
         }
@@ -253,18 +259,23 @@ public class GameManager : MonoBehaviour
     public void ToMainMenuFromPause()
     {
         Time.timeScale = 1.0f;
+        if (user != null)
+        {
+            if (user.getHighestWave() < waveNumber)
+                CloudFunctions.SetHighestWave(waveNumber);
 
-        if (user.getHighestWave() < waveNumber)
-            CloudFunctions.SetHighestWave(waveNumber);
-
-        CloudFunctions.addXP(xp);
+            CloudFunctions.addXP(xp);
+        }
 
         SceneManager.LoadScene(sceneName: "MenuScene");
     }
 
     public void ToMainMenuFromGameOver()
     {
-        CloudFunctions.addXP(1000 + xp);
+        if(user != null)
+            {
+            CloudFunctions.addXP(1000 + xp);
+        }
         SceneManager.LoadScene(sceneName: "MenuScene");
     }
 }
