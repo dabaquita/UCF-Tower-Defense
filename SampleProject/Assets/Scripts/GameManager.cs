@@ -149,7 +149,7 @@ public class GameManager : MonoBehaviour
     {
         if (GameMode == 0)
         {
-            if (adventureSpawner.getWaveNumber() >= 2 && enemiesAlive <= 0 && Player.getHealth() > 0 && (!isSpawning))
+            if (adventureSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0 && (!isSpawning))
             {
                 if (user != null)
                 {
