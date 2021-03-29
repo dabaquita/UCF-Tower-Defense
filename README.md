@@ -261,6 +261,7 @@ Denielle Abaquita:
 - Added background music to each map scene
 
 Kirk Matthews (Matthews242):
+- U013, U027, U016, U026, U011
 - Tailored invidual waves for adventure mode and game balancing with Denielle
 - Made survival mode throw random waves at you until your inevitable death
 - Updated map selection
