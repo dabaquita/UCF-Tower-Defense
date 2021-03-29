@@ -16,6 +16,8 @@ public class Enemy : MonoBehaviour
     public EndOfPathInstruction endOfPathInstruction;
 
     GameManager gm;
+    AudioSource destroySound;
+    AudioSource projectilCollisionSound;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,8 @@ public class Enemy : MonoBehaviour
         transform.position = pathCreator.path.GetPointAtTime(0.0f);
         gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         gm.RegisterEnemy(this);
+        destroySound = GameObject.Find("enemyDestroyed").GetComponent<AudioSource>();
+        projectilCollisionSound = GameObject.Find("projectileAudio").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -61,6 +65,7 @@ public class Enemy : MonoBehaviour
             if( newP != null)
             {
                 DamageEnemy(newP.AttackDamage);
+                projectilCollisionSound.Play();
                 Destroy(collision.gameObject);
             }
         }
@@ -84,6 +89,7 @@ public class Enemy : MonoBehaviour
     public void DestroyEnemy()
     {
         DestroyImmediate(gameObject);
+        destroySound.Play();
         gm.enemiesAlive--;
     }
 
@@ -108,6 +114,7 @@ public class Enemy : MonoBehaviour
 
     public void DamageEnemy(int damage)
     {
+
         health -= damage;
     }
 
