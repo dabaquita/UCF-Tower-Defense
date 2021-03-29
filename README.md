@@ -248,6 +248,7 @@ Recleph Mere (KilluaxGonx):
 # Sprint 8 Task Allocation
 
 Nicholas Nachowicz:
+- U032
 - Game balancing with points and damage
 - Fixed various game bugs with towers and maps
 - Created unique tower projectiles
