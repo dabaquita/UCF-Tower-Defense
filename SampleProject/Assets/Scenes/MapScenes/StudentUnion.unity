@@ -23977,6 +23977,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOver
       objectReference: {fileID: 0}
+    - target: {fileID: 8360261691328288149, guid: e53481ed3135c1141be12ec782790b8f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1663233284}
+    - target: {fileID: 8360261691328288149, guid: e53481ed3135c1141be12ec782790b8f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToMainMenuFromGameOver
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e53481ed3135c1141be12ec782790b8f, type: 3}
 --- !u!224 &1153154791 stripped
