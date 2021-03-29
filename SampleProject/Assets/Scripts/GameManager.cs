@@ -155,8 +155,6 @@ public class GameManager : MonoBehaviour
                 {
                     if (user.getHighestWave() < waveNumber)
                         CloudFunctions.SetHighestWave(waveNumber);
-
-                    CloudFunctions.addXP(1000 + xp);
                 }
                 return true;
             }
@@ -169,8 +167,6 @@ public class GameManager : MonoBehaviour
                 {
                     if (user.getHighestWave() < waveNumber)
                         CloudFunctions.SetHighestWave(waveNumber);
-
-                    CloudFunctions.addXP(1000 + xp);
                 }
                 return true;
             }
@@ -263,7 +259,11 @@ public class GameManager : MonoBehaviour
         {
             if (user.getHighestWave() < waveNumber)
                 CloudFunctions.SetHighestWave(waveNumber);
-
+            
+            if (victory())
+            {
+                xp += 1000;
+            }
             CloudFunctions.addXP(xp);
         }
 
@@ -274,6 +274,10 @@ public class GameManager : MonoBehaviour
     {
         if(user != null)
             {
+            if (victory())
+            {
+                xp += 1000;
+            }
             CloudFunctions.addXP(1000 + xp);
         }
         SceneManager.LoadScene(sceneName: "MenuScene");
