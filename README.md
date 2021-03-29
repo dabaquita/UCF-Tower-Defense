@@ -268,6 +268,10 @@ Kirk Matthews (Matthews242):
 - Worked on victory conditions and related algorithms
 
 Christopher Foreman:
-
+- U014, U015
+- Created User model syncing client with database
+- Created cloud function setHighestWave
+- Created cloud function addXP
+- Created cloud function unlockLevel
 
 Recleph Mere (KilluaxGonx):
