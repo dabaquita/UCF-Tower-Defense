@@ -23985,6 +23985,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1153154790}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1153154792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8360261691305878965, guid: e53481ed3135c1141be12ec782790b8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1153154790}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1153886905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27455,7 +27461,8 @@ MonoBehaviour:
   spawnBool: 0
   waveText: {fileID: 34831815}
   moneyGiven: 00000000000000000000
-  gameOverScreen: {fileID: 0}
+  isSpawning: 0
+  gameOverScreen: {fileID: 1153154792}
   victoryScreen: {fileID: 2089494005}
   pauseMenu: {fileID: 1224519214}
   waveNumber: 0

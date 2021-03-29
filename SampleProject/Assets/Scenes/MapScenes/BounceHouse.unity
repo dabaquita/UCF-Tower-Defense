@@ -716,9 +716,10 @@ MonoBehaviour:
   spawnBool: 0
   waveText: {fileID: 910007209}
   moneyGiven: 
+  isSpawning: 0
   gameOverScreen: {fileID: 2874841288100210872, guid: 6d8d0e04573ade946a05bc0b54072fd1,
     type: 3}
-  victoryScreen: {fileID: 0}
+  victoryScreen: {fileID: 1088463769}
   pauseMenu: {fileID: 1872254866}
   waveNumber: 0
   enemiesAlive: 0
@@ -13881,6 +13882,12 @@ PrefabInstance:
 --- !u!224 &1088463768 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6957996487127717214, guid: b1946308a93ef384d8a75af98df17a10,
+    type: 3}
+  m_PrefabInstance: {fileID: 1088463767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1088463769 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6957996487127717213, guid: b1946308a93ef384d8a75af98df17a10,
     type: 3}
   m_PrefabInstance: {fileID: 1088463767}
   m_PrefabAsset: {fileID: 0}
