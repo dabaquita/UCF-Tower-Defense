@@ -149,7 +149,7 @@ public class GameManager : MonoBehaviour
     {
         if (GameMode == 0)
         {
-            if (adventureSpawner.getWaveNumber() >= 10 && enemiesAlive <= 0 && Player.getHealth() > 0 && (!isSpawning))
+            if (adventureSpawner.getWaveNumber() >= 2 && enemiesAlive <= 0 && Player.getHealth() > 0 && (!isSpawning))
             {
                 if (user != null)
                 {
@@ -197,8 +197,8 @@ public class GameManager : MonoBehaviour
 
                 enemiesAlive++;
                 yield return new WaitForSeconds(0.8f);
-                isSpawning = false;
             }
+            isSpawning = false;
         }
         else
         {
@@ -212,8 +212,8 @@ public class GameManager : MonoBehaviour
 
                 enemiesAlive++;
                 yield return new WaitForSeconds(0.8f);
-                isSpawning = false;
             }
+            isSpawning = false;
         }
 
 
@@ -259,7 +259,7 @@ public class GameManager : MonoBehaviour
         {
             if (user.getHighestWave() < waveNumber)
                 CloudFunctions.SetHighestWave(waveNumber);
-            
+
             if (victory())
             {
                 xp += 1000;
@@ -272,8 +272,8 @@ public class GameManager : MonoBehaviour
 
     public void ToMainMenuFromGameOver()
     {
-        if(user != null)
-            {
+        if (user != null)
+        {
             if (victory())
             {
                 xp += 1000;
