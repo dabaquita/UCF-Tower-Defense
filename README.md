@@ -248,7 +248,9 @@ Recleph Mere (KilluaxGonx):
 # Sprint 8 Task Allocation
 
 Nicholas Nachowicz:
-
+- Game balancing with points and damage
+- Fixed various game bugs with towers and maps
+- Created unique tower projectiles
 
 Denielle Abaquita:
 - Finalize all remaining map scenes
