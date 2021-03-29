@@ -254,6 +254,7 @@ Nicholas Nachowicz:
 - Created unique tower projectiles
 
 Denielle Abaquita:
+- U017, U011, U026, U016, U013
 - Finalize all remaining map scenes
 - Game balancing with points and damage
 - Refactored Wave Spawning for both Adventure and Survival modes
