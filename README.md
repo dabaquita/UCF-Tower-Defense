@@ -275,3 +275,10 @@ Christopher Foreman:
 - Created cloud function unlockLevel
 
 Recleph Mere (KilluaxGonx):
+- U032
+- Add SFX to Enemey and projectile objects
+- Fix projectiles orientations when thrown by Enemies
+- Fix projectile being stuck on map after missing Enemy objects
+- Add settings menu to each map
+- Update settings menu to change global audio
+- Fix layer issue on game maps
